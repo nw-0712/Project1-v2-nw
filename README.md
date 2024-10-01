@@ -1,131 +1,234 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Welcome Users,
 
-Welcome Niccola Winter,
+NEUROXCEL FUSION INSITITUTE
+Biohacking supported by cutting-edge technologies to accelerate your health and wellness
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+OVERVIEW
+The site provides the users a clear outline of the institute, their vison, which is to help, support, heal and accelerate everyone’s mental and physical wellbeing.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+Users of this website will be able to gain an understanding of biohacking, the different types of biohacking and the different practises, therapies, nutrition, technology and a mix of professionals used for the specific areas of focus. This site's purpose is to promote biohacking and bring value to different user groups like rehabilitation & recovery, neural conditions, neurological conditions, wellness, mental health, longevity, performance acceleration and enhanced nutrition. The benefits for these users (depending on their specific focus areas) is that they will get access to a combination of therapies, products, supplement, experts and technology to accelerate recovery, increase performance, introduce wellness, promote longevity or simply to learn how they can make changes to benefit their overall mental and physical health and change in their environments.
 
-## Gitpod Reminders
+CONTENTS:
+USER EXPERIENCE (ux)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Project goals
+Epics & user stories
+Colours
+4.Typography (fonts)
+Wireframes
+FEATURES & FUNCTIONALITY
 
-`python3 -m http.server`
+Home page
+Products & Services page
+Contact us page
+FRAMEWORKS, LIBRARIES AND PROGRAM USED
 
-A blue button should appear to click: _Make Public_,
+Languages
+Programs
+TESTING
 
-Another blue button should appear to click: _Open Browser_.
+User stories
+Forms
+Code validation
+Accessibility & scores</>
+DEPLOYMENT
+RESOURCES
+RESEARCH
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+FEATURES & FUNCTIONALITY
+Home Page
 
-A blue button should appear to click: _Make Public_,
+This page gives the users the ability to click on 'discover' button to learn more about the institute, contact them, and access the other pages through the top navigation menu.
+Topnavigation bar: is featured on all three website pages, that is fully responsive which includes links to the logo, home page, about us page, products & services page and the contact us page.
+image
 
-Another blue button should appear to click: _Open Browser_.
+Products & Services page
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+This page the users learn more about some of the products & services that the institute offers. image
+Contact page
 
-To log into the Heroku toolbelt CLI:
+The users can fill out the contact form, to contact the company and has dropdown function to select country of choice.
+Contact form: users can fill in details and contact institute through this method.
+The users can also click on map and be directed to the Google maps application to get directions to the various offices.
+The users can input their email address to subscribe to the company newsletter. image
+USER EXPERIENCE (UX)
+Project Goals
+a. Bring your own idea(s) to life, based on providing value to users to address a specific real or imagined need.
+b. Use the relevant project assessment criteria as a guide to the minimum required functionality.
+c. There is a clear rationale for the development of this project.
+d. A fully functioning, well-documented website.
+e. Well-defined purpose addressing a particular target/multiple audience.
+f. Its purpose would be immediately evident to a new user.
+g. The website’s design follows the principles of UX design and accessibility guidelines, and the site is fully responsive.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+image
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+Epics & user stories
 
-### Connecting your Mongo database
+As a user I want the ability to click on all the social media icons and be redirected to the relevant social media sites.
+As a user I want the ability to move through the navigation of the site by clicking on the menu bar and be directed to the page of choice.
+As a user I want the ability to click on Google maps and be directed to the app, so that I can get directions form my location to company.
+As a user I want the ability to click on the 'call-to-action' discover button so that I can be directed to the products/service page and learn more about biohacking and institute.
+As a user I want the ability to get exact information on the products/services offered by the company.
+As a user I want the ability to fill out the contact form so that I can get in contact with the company.
+As a user I want the ability to enter my personalised message in the 'freetext' field, so I can give personalised message to the company.
+Colours
+image
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+Typography
+Headings and sub-headings: Font used - Libre
+Body copy: Font used - Lato sans serif
 
-------
+Wireframes
+image
 
-## Release History
+image
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Frameworks, Libraries and Programs Used
+a. Languages: HTML, CSS
+HTML5
+https://en.wikipedia.org/wiki/HTML5
 
-**June 18, 2024,** Add Mongo back into template
+CSS
+https://en.wikipedia.org/wiki/CSS
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+b. Programs:
+VS desktop
+https://code.visualstudio.com/download
 
-**May 28 2024:** Fix Mongo and Links installs
+Github
+https://github.com/
 
-**April 26 2024:** Update node version to 16
+Gitpod
+https://www.gitpod.io/
 
-**September 20 2023:** Update Python version to 3.9.17.
+Visme
+https://www.visme.co/
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+W3C markup validator
+https://validator.w3.org/
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Unsplash
+https://unsplash.com/
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Favicon
+https://favicon.io/
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Unsplash images
+https://unsplash.com/
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Font Awesome
+https://fontawesome.com/
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Freepix
+https://www.freepik.com/
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Chromedevtools
+https://developer.chrome.com/docs/devtools
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Am I responsive
+https://ui.dev/amiresponsive
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Google fonts
+https://fonts.google.com/
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+TESTING
+User stories
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+As a user I clicked on the social media icons and had expected behaviour of being directed to the relevant URL of the social media sites directly.
+As a user I clicked on top navigation menu and had expected behaviour of being directed to the products/services page when I clicked on the link and when I clicked on the contact link, I was directed to the contacts page.
+As a user I clicked on Google maps and was automatically taken to an opened page of in browser which contained google map.
+As a user I want the ability to click on the 'call-to-action' discover button so that I can be directed to the products/service page and learn more about biohacking and institute.
+As a user I want the ability to get exact information on the products/services offered by the company.
+As a user I want the ability to fill out the contact form so that I can get in contact with the company directed.
+As a user I want the ability to enter my personalised message in the 'free-text' field, so I can give personalised message to the company.
+Form validation
+Contact us form
+image image
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Newsletter subscription form
+image image
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Code valildation
+The W3C Html Markup Validator and W3C CSS Validator services were used to validate all pages of the project in order to ensure there were no syntax errors.
+https://validator.w3.org/detailed.html Some warnings found for the // in the CSS stylesheet. HTML Home page:
+image HTML Products: Page
+image Contact Page:
+image
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+https://jigsaw.w3.org/css-validator/ Validating my CSS I got this error and corrected it. image image
 
-------
+Accessibility & scores
+Used Lighthouse in Chrome DevTools to confirm accessibility used in throughout the website are easy to read and accessible.
 
-## FAQ about the uptime script
+Home page
+image
 
-**Why have you added this script?**
+Products & services Page
+image
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Contact us page
+image
 
-**How will this affect me?**
+DEPLOYMENT
+Github pages & Libraries
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+RESOURCES
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Best practises
+https://stackoverflow.com/
+b2. Code for Google maps integration
+I used this code reference: https://www.w3schools.com/graphics/google_maps_intro.asp
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Image libraries
+Unsplash
+Freepix
 
-**So….?**
+Icon libraries
+Favicon
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Research
+The research I did for project is contained the link and includes the list items below.
+https://my.visme.co/editor/MW9DSW1zTUdUS2kvTFBLanhkTFFpQT09Ojo2TzNKUWlCUHdxLzlHcGhlNE1tNTVnPT0=/basics
 
-**Can I opt out?**
+Users
+Consumer- no referral (only access to resources, practises, self-help pages)
+Patients (by referral only)
+Industry professionals (e.g. Occupational therapist, GP)
+Partners
+Administrators
+Data security
+Clinic lead
+Nutritionist
+Analysts
+Researchers
+Community health care worker/health extension worker
+Social worker
+User segmentation groups
+Rehabilitation & recovery
+Neural conditions (stroke) patients
+Mental health
+Nutrigenomics
+General Wellness
+Lifestyle change
+Metabolic improvement
+Longevity
+(HIIT) high-intensity interval training
+Anti-aging
+Mindfulness
+Immersion healing
+Strategy
+image
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+USPs
+Our biohacking programs reduced stress & anxiety by 96%
+Our biohacking programs accelerated recovery from major surgery by 68%
+82% reported an improvement in their mental & physical health
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Competitors
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+Bulletproof360
+Moodmetric
+Sqlab
+Dobiohacking
+The Odin
