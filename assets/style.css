@@ -38,7 +38,7 @@ body, html {
 .nav-menu li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
@@ -47,6 +47,7 @@ body, html {
 }
 
 /* --------Home page - all components ------------*/
+
 /* Cover Image Section */
 .cover-container {
     background: url('assets/images/neural.network.cover.f.jpg') no-repeat center center/cover;
@@ -58,8 +59,9 @@ body, html {
     padding-top: 80px; /* To account for the navbar */
 }
 
+/* Dark overlay on image for readability */
 .overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay on image */
+    background-color: rgba(0, 0, 0, 0.2); 
     position: absolute;
     top: 0;
     left: 0;
@@ -76,6 +78,11 @@ body, html {
     z-index: 2;
 }
 
+.content img {
+    width: 10%;
+   height: 10%;
+    z-index: 99;
+}
 
 /* General heading styles home page */ 
 h1 {
