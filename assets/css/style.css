@@ -1,0 +1,283 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  General styles */
+body, html {
+    height: 100%;
+    font-family: Libre, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 17px 22px;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    color: #f0f0f0;
+}
+
+/* --------Home page - all components ------------*/
+
+/* Cover Image Section */
+.cover-container {
+    background: url('assets/images/neural.network.cover.f.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 80px; /* To account for the navbar */
+}
+
+/* Tinted overlay on image for readability */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontent {
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    align-items: center;
+}
+
+.logo-centered {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.maincontent img {
+    width: 8%;
+   height: 8%;
+    z-index: 99;
+    align-items: center;
+}
+
+/* General heading styles home page */ 
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Discover CTA button */ 
+.cta-button {
+    background-color: #3EB9BB;
+    color: #fff;
+    padding: 17px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.cta-button:hover {
+    background-color: #3EB9BB;
+    align-items: center;
+}
+
+/* Footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+  #social-networks i {
+    font-size: 100%;
+    padding: 5%;
+    color: #3a3a3a;
+  }
+
+
+/* ----------- Products & services page --------------- */
+
+.pscontainer {
+    display: flex;
+    height: 100vh;
+}
+
+.pscontent {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling for long content */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ------- Media query sizes 480px and up) -------*/
+@media (max-width: 480px) {
+
+    /* Home page elements */
+     h1 {
+         font-size: 1.8rem;
+     }
+ 
+     h2 {
+         font-size: 1rem;
+     }
+ 
+     .cta-button {
+         padding: 10px 20px;
+         font-size: 0.9rem;
+         align-items: center;
+     }
+     .nav-menu li a {
+         font-size: 50%;
+         text-align: justify;
+     }
+ 
+ /* Footer */
+ #social-networks {
+     text-align: center;
+     padding: 20px 0;
+     display: flex;
+     justify-content: space-evenly;
+     list-style-type: none;
+   }
+   
+   #social-networks i {
+     font-size: 100%;
+     padding: 5%;
+     color: #3a3a3a;
+   }
+ }
+ 
+/* ------ Media query: large or landscape phones (576px and up to 768px) ------*/
+@media (max-width: 768px) {
+   /* Products Page MQ */
+    .sections {
+        grid-template-columns: 1fr; /* Stack text columns - small screens */
+    }
+
+    .image-container {
+        height: 300px; /* Adjust height for mobile */
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo-centered {
+        width: 30%;
+        height: 30%;
+        align-items: center;
+    }
+
+ /* Home Page MQ */
+ .logo-centered {
+    width: 100px;
+}
+    .nav-menu {
+    font-size: 1rem;
+    } 
+}
+
+/* ------ Media query: large or landscape phones ( 900px and up to 1024px) ------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sections {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+    .maincontent img {
+        width: 6%;
+       height: 6%;
+        z-index: 99;
+    }
+    .logo-centered {
+        width: 20%;
+        height: 20%;
+        align-items: center;
+    }
+
+}
+
+
+/* ---------  Cotent Page --------- */
