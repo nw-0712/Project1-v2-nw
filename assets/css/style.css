@@ -46,18 +46,15 @@ body, html {
     color: #f0f0f0;
 }
 
-/* --------Home page - all components ------------*/
+/* ----------- Home page - all components ------------*/
 
 /* Cover Image Section */
-.cover-container {
-    background: url('assets/images/neural.network.cover.f.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 80px; /* To account for the navbar */
-}
+.cover-container img {
+        background-image: url('assets/images/neural.netw.L.cover.f.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 100vh; 
+    }
 
 /* Tinted overlay on image for readability */
 .overlay {
@@ -94,14 +91,14 @@ body, html {
 }
 
 /* General heading styles home page */ 
-h1 {
+.maincontent h1 {
     font-size: 3rem;
     margin-bottom: 10px;
     color: #fff;
     text-align: center;
 }
 
-h2 {
+.maincontent h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #fff;
@@ -116,8 +113,8 @@ h2 {
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
     align-items: center;
+    margin-top: 50px;
 }
 
 .cta-button:hover {
@@ -145,35 +142,53 @@ h2 {
 
 .pscontainer {
     display: flex;
-    height: 100vh;
+    height: 100vh;  
 }
 
 .pscontent {
     flex: 1;
     padding: 20px;
-    overflow-y: auto; /* Allows scrolling for long content */
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
+    padding-top: 10%;
 }
 
 .product-list {
     list-style-type: disc;
     margin-bottom: 20px;
     padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+}
+  
+.column-section {
+    flex: 1 1 100%; /* Base width of 100% for small screens */
+    padding: 10px; /* Padding for each column */
+    margin-bottom: 14px; /* Space between rows */
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    flex-direction: column;
+    
+    /* For small screens, display as a single column */
+    column-count: 1; /* Single column by default */
+    column-gap: 20px; /* Space between columns */
 }
 
-.sections {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.column-section h2 {
+    font-size: 2rem;
+} 
+.column-section p {
+font-size: 2rem;
 }
 
 .image-container {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-   
+    justify-content: center 
 }
 
 .image-container img {
@@ -182,35 +197,34 @@ h2 {
     object-fit: cover;
 }
 
-.section {
-    background: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 
 /* ------- Media query sizes 480px and up) -------*/
 @media (max-width: 480px) {
 
     /* Home page elements */
-     h1 {
-         font-size: 1.8rem;
-     }
- 
-     h2 {
-         font-size: 1rem;
-     }
- 
+
+     .pscontainer {
+        width: 100%; /* Full width on very small screens */
+        padding: 10px; /* Further reduced padding */
+    }
+
      .cta-button {
          padding: 10px 20px;
          font-size: 0.9rem;
          align-items: center;
      }
      .nav-menu li a {
-         font-size: 50%;
+         font-size: 100%;
          text-align: justify;
      }
+     
+    .nav-menu {
+        font-size: 1rem;
+    }
+    .logo-centered {
+        width: 80px;
+    }
+    
  
  /* Footer */
  #social-networks {
@@ -230,20 +244,26 @@ h2 {
  
 /* ------ Media query: large or landscape phones (576px and up to 768px) ------*/
 @media (max-width: 768px) {
-   /* Products Page MQ */
-    .sections {
-        grid-template-columns: 1fr; /* Stack text columns - small screens */
-    }
 
-    .image-container {
-        height: 300px; /* Adjust height for mobile */
+  /* Change to three columns on larger screens */
+    .column-section {
+        column-count: 3; 
     }
-    h1 {
+/* Optional styles for text appearance */
+.pscontent > p {
+    break-inside: avoid; /* Prevent paragraph break within a column */
+    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 30px;
+}
+    .image-container {
+        height: 300px; 
+    }
+   .pscontainer h1 {
         font-size: 2.5rem;
     }
 
-    h2 {
-        font-size: 1.2rem;
+    .pscontainer h2 {
+        font-size: 1.5rem;
     }
 
     .logo-centered {
@@ -252,32 +272,82 @@ h2 {
         align-items: center;
     }
 
- /* Home Page MQ */
+
  .logo-centered {
     width: 100px;
 }
-    .nav-menu {
+.navbar {
+    height: 10%;
+}
+
+.nav-menu {
     font-size: 1rem;
-    } 
+}
+
+.maincontent {
+    max-width: 1200px; 
+    width: 100%;
+}
+.cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+.pscontainer {
+    /* Slightly wider for smaller screens */
+    width: 95%; 
+    /* Reduced padding for mobile */
+    padding: 15px; 
+}
+
+}
+/* ------ Media query: large or landscape phones ( 900px and up to 1024px) ------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+/* Three columns for large screens */
+
+
+.column-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+    .navbar {
+        height: 10%;
+    }
+
+.cover-container img {
+     background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw; 
+}
+.maincontent {
+width: 40vw;
+height: 40vh;
+}
+
+.column-section h2 {
+    font-size: 5rem;
+} 
+.column-section p {
+font-size: 5rem;
+}
 }
 
 /* ------ Media query: large or landscape phones ( 900px and up to 1024px) ------*/
-@media (min-width: 769px) and (max-width: 1024px) {
-    .sections {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
-    }
-    .maincontent img {
-        width: 6%;
-       height: 6%;
-        z-index: 99;
-    }
-    .logo-centered {
-        width: 20%;
-        height: 20%;
-        align-items: center;
-    }
+@media (min-width: 1024px) and (max-width: 1920px) {
 
+    /* Three columns for large screens */
+
+    
+
+.column-section h2 {
+    font-size: 5rem;
+} 
+.column-section p {
+font-size: 5rem;
+}
 }
 
-
-/* ---------  Cotent Page --------- */
