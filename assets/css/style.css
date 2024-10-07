@@ -154,88 +154,164 @@ body, html {
 
 
 /* ----------- Products & services page --------------- */
+header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 22%;
+    font-size: 2rem;
+}
+
 .pscontainer {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin-top: 8%;
-    padding-left: 20px;
-  }
+    padding-left: 40px;
+    margin-right: 40px;
+}
   
-  header {
-    text-align: center;
-    padding: 20px;
-    margin-top: 8%;
-  }
-  
-  .pscontainer > h1 {
-    font-size: 2.5em;
-  }
-  
-  .pscontainer > p {
+.pscontainer > h4 {
     margin-top: 11px;
-    font-size: 1.8rem;
-  }
+    font-size: 2rem;
+}
   
-  .ps-content {
+.ps-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  }
+    padding-left: 50px;
+}
   
-  .products-text-section {
+.products-text-section h2  {
     padding: 20px;
     flex: 1;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 1.8rem;
-  }
-  
-  .products-columns {
+    font-size: 2.1rem;
+    padding-left: 50px;
+}
+.products-text-section p {
+    font-size: 2rem;  
+    padding-left: 50px;
+}
+.products-columns {
     display: flex;
     flex-direction: column;
     column-gap: 25px;
-  }
+    padding-left: 40px;
+    padding-right: 40px;
+}
   
-  .columns >h2 {
-    font-size: 2.1rem ;
-  }
-  .columns >p {
-    font-size: 1.8rem;
-    /* Default spacing for paragraphs */
+.columns >h2 {
+    font-size: 2.6rem ;
+}
+.columns >p {
+    font-size: 2rem;
+/* Default spacing for paragraphs */
     margin-bottom: 24px; 
-  }
-  .columns {
+}
+.columns {
     padding: 16px;
     border: 1px solid #ccc;
     margin: 13px 0;
+    padding-left: 40px;
 }
   
-  /* Image section */
-  .products-image {
+ /* Image section */
+.products-image {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
     padding: 20px;
-  }
-  
+}
   
 .products-image img {
     width: 100%;
     height: auto;
     max-height: 100vh;
     object-fit: cover;
-  }
+}
 
 
-/* ------------------end of products page ------------*/
+/* ---- Contact page ---------*/
+
+.contact-container >h2, h3 {
+    text-align: center;
+    color: #212A31;
+}
+.contact-container >h1 {
+    margin-bottom: 4%;
+    font-size: 2rem;
+}
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 8%;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section, .address-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00372A;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3EB9BB;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #3EB9BB;
+}
+
+.address-section {
+    text-align: center;
+}
+
+.address-section >p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
 
-/* ------- Media query sizes 480px and up) -------*/
+/* -----------------End of all pages -------------*/
+
+
+
+/* ------ Media query sizes 480px and up) -----*/
 @media (max-width: 480px) {
     
 /* Navigation bar */
@@ -268,6 +344,7 @@ body, html {
 }
 
 }
+
 /* ------ Media query: large or landscape phones (576px and up to 768px) ------*/
 @media (max-width: 768px) {
 
@@ -303,6 +380,19 @@ body, html {
     flex: 1;
 }
 
+/* Contact page */
+.contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-section, .address-section {
+    width: 48%;
+}
+
+.address-section {
+    text-align: left;
+}
 
 /* Footer and bar */
 #social-networks i {
@@ -340,6 +430,20 @@ body, html {
     height: 130%;
 }
 
+/* Contact us page */
+.contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-section, .address-section {
+    width: 55%;
+}
+
+.address-section {
+    text-align: left;
+}
+
 /* Footer bar & items */
 #social-networks i {
     font-size: 190%;
@@ -350,9 +454,11 @@ body, html {
 
 /* Products page */
 
-.pscontainer {
-    flex-direction: row;
-    justify-content: space-between;
+header {
+    font-size: 120%;
+}
+.pscontainer > h1,h4 {
+    font-size: 220%;
 }
 
 .products-columns {
@@ -360,13 +466,10 @@ body, html {
     flex: 2;
     justify-content: space-between; 
 }
-.pscontainer > h1 {
-    font-size: 5em;
-  }
-  
-  .pscontainer > p {
-    font-size: 3rem;
-  }
+
+.columns >p {
+    font-size: 4rem;
+}
 .columns {
     flex: 1;
     margin-right: 10px;
@@ -374,10 +477,6 @@ body, html {
 
 .columns > h2 {
     font-size: 4rem;
-}
-
-.columns > p {
-    font-size: 2.1rem;
 }
 
 /* image section */
@@ -392,6 +491,7 @@ body, html {
 
 }
 
+
 /* ------ Media query: large or landscape phones (1024px up to 1920px) ------*/
 @media (min-width: 1024px) and (max-width: 1920px) {
 
@@ -400,36 +500,42 @@ body, html {
     font-size: 160%;
 }
 
-
 .cta-button {
     width: 150%;
     height: 150%;
 }
+.pscontainer >h1 {
+font-size: 50px;
+}
+.pscontainer >p {
+    font-size: 50px;
+    }
 /* Footer bar & items */
 #social-networks i {
-    font-size: 210%;
+    font-size: 240%;
 }
 .products-columns {
     flex-direction: row;
     flex: 2;
     justify-content: space-between;
-  }
+}
 
 /* Products page contents*/
-  .columns {
+.columns {
     flex: 1;
-  }
+ }
+
 /* Remove margin-right on the last column */
 .columns:last-child {
     margin-right: 0;
-  }
-  .products-image {
+ }
+.products-image {
     flex: 1;
-  }
+ }
 
-  .products-image img {
+.products-image img {
     height: 100vh;
     object-fit: cover;
-  }
+}
 
 }
