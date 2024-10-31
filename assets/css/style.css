@@ -7,10 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*  General styles */
 body, html {
     height: 100%;
-    font-family: Libre, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 /* Navigation Bar */
@@ -30,6 +31,7 @@ body, html {
 .nav-menu {
     list-style: none;
     display: flex;
+    flex-direction: row; /* Set items in a horizontal row */
 }
 
 .nav-menu li {
@@ -40,6 +42,7 @@ body, html {
     color: #f0f0f0;
     font-size: 1.5rem;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .nav-menu li a:hover {
@@ -54,20 +57,24 @@ body, html {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100vw;
+    background-attachment: fixed; /* Ensure background scales with screen */
+    position: relative;
+    overflow: hidden; /* Prevent image overflow */
 }
 
 .cover-container img {
-    height: 135vh;
+    height: 100vh;
 }
 
 /* Tinted overlay on image for readability */
 .overlay {
-    background-color: #00000033; 
+    background-color: #00000077; 
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 132vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -77,7 +84,9 @@ body, html {
     color: #fff;
     z-index: 99;
     align-items: center;
-    margin-top: 25%;
+    margin-top: 20px;
+    padding: 20%;/* Adjusted margin for smaller screens */
+    margin-top: 20vh; /* Added more top margin for spacing from navbar */
 }
 
 .logo-centered {
@@ -86,42 +95,41 @@ body, html {
 }
 
 .maincontent img {
-    width: 9%;
-    height: 4%;
     z-index: 99;
-    align-items: center;
+   width: 67px;
+   height: 67px;
 }
 
 /* General heading styles home page */ 
-.maincontent >h1 {
-    font-size: 3rem;
+.maincontent h1 {
+    font-size: 3.5rem;
     margin-bottom: 10px;
     color: #fff;
     text-align: center;
 }
 
-.maincontent >h2 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
+.maincontent h2 {
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 15px;
     color: #fff;
-    text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 /* Discover CTA button */ 
 .cta-button {
-    background-color: #3EB9BB;
+    background-color: #003135;
     color: #fff;
     padding: 17px 30px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     border-radius: 5px;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .cta-button:hover {
-    background-color: #3EB9BB;
+    background-color: #212A31;
     align-items: center;
 }
 
@@ -131,6 +139,7 @@ body, html {
     padding: 20px 0;
     height: 10%;
     z-index: -1;
+    text-align: center;
 }
 
 #social-networks {
@@ -145,13 +154,134 @@ body, html {
 }
 
 #social-networks i {
-    font-size: 150%;
+    font-size: 1.5rem;
     padding: 20%;
     color: #3a3a3a;
     z-index: 99;
     display: flex;
 }
 
+/* Media query for small phone*/
+@media (min-width: 320px) and (max-width: 576px) {
+
+.navbar {
+    padding: 20px 20px;/* Increased padding for better visibility */
+    }
+
+.cover-container {
+    background-size: contain; /* Ensure the image fits smaller screens */
+    height: 100vh;
+    }
+
+.maincontent {
+   margin-top: 25vh; /* Increased top margin for smaller screens */
+   padding: 20px;
+    }
+
+.nav-menu {
+    flex-direction: column;
+    }
+
+.nav-menu li {
+    margin-left: 0;
+    margin-bottom: 16px;
+    }
+
+.maincontent h1 {
+    font-size: 3.8rem !important; /* Increased font size */
+    line-height: 1.3; /* Adjusted line height for better readability */
+    }
+
+.maincontent h2 {
+    font-size: 2.1rem !important; /* Increased font size */
+    letter-spacing: 2.5px;
+    }
+
+.cta-button {
+    font-size: 1.2rem; /* Increased font size */
+    padding: 15px 30px; /* Adjusted padding for easier tapping */
+    margin-top: 20px;
+    }
+}
+
+/* Large phone screens media queries */  
+@media (min-width: 576px) and (max-width: 767px) {
+    .maincontent {
+        margin-top: 20vh;
+    }
+
+    .maincontent h1 {
+        font-size: 3rem;
+    }
+
+    .maincontent h2 {
+        font-size: 1.5rem;
+    }
+    .cover-container {
+        height: 100vh;
+    }
+}  
+
+
+/* Tablet screens media queries */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .maincontent {
+        margin-top: 18vh;
+    }
+
+    .maincontent h1 {
+        font-size: 3.5rem;
+    }
+
+    .maincontent h2 {
+        font-size: 1.7rem;
+    }
+    .cover-container {
+        height: 100vh;
+    }
+}
+
+/* Desktop screens media queries */
+@media (min-width: 992px) {
+    .maincontent {
+        margin-top: 15vh;
+    }
+
+    .maincontent h1 {
+        font-size: 4rem;
+    }
+
+    .maincontent h2 {
+        font-size: 2rem;
+    }
+
+    .cover-container {
+        background-size: cover;
+        height: 100vh;
+    } 
+}  
+
+/* Large laptop screens media queries */
+@media (min-width: 1200px) {
+/* Nav bar */
+.maincontent {
+    margin-top: 12vh;
+}
+
+.maincontent h1 {
+    font-size: 4.5rem;
+}
+
+.maincontent h2 {
+    font-size: 2.5rem;
+}
+
+.cover-container {
+    background-size: cover;
+    height: 100vh;
+}
+}
 
 /* ----------- Products & services page --------------- */
 header {
@@ -169,7 +299,7 @@ header {
     margin-right: 40px;
 }
   
-.pscontainer > h4 {
+.pscontainer h4 {
     margin-top: 11px;
     font-size: 2rem;
 }
@@ -199,10 +329,10 @@ header {
     padding-right: 40px;
 }
   
-.columns >h2 {
+.columns h2 {
     font-size: 2.6rem ;
 }
-.columns >p {
+.columns p {
     font-size: 2rem;
 /* Default spacing for paragraphs */
     margin-bottom: 24px; 
@@ -231,13 +361,83 @@ header {
 }
 
 
-/* ---- Contact page ---------*/
+/* Media query for small phone*/
+@media (min-width: 320px) and (max-width: 575px) {
+    
+/* Products page  */
+.pscontainer {
+    width: 100%; 
+    padding: 10px; 
+}
 
-.contact-container >h2, h3 {
+.products-columns {
+    flex-direction: row;
+    flex: 2;
+    justify-content: space-between;
+}
+
+/* Products page contents*/
+.columns {
+    flex: 1;
+ }
+
+/* Remove margin-right on the last column */
+.columns:last-child {
+    margin-right: 0;
+ }
+.products-image {
+    flex: 1;
+ }
+
+.products-image img {
+    height: 100vh;
+    object-fit: cover;
+}
+header {
+    font-size: 80px;
+}
+.pscontainer h1,h4 {
+    font-size: 220%;
+}
+
+.products-columns {
+    flex-direction: row;
+    flex: 2;
+    justify-content: space-between; 
+}
+
+.columns p {
+    font-size: 4rem;
+}
+.columns {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.columns h2 {
+    font-size: 4rem;
+}
+
+/* image section */
+.products-image {
+    flex: 1;
+}
+
+.products-image img {
+    height: 100vh;
+    object-fit: cover;
+ }
+
+}
+
+
+/* ------------- Contact us page ---------------*/
+
+.contact-container h2, h3 {
     text-align: center;
     color: #212A31;
 }
-.contact-container >h1 {
+.contact-container h1 {
     margin-bottom: 4%;
     font-size: 2rem;
 }
@@ -301,241 +501,24 @@ form button:hover {
     text-align: center;
 }
 
-.address-section >p {
+.address-section p {
     font-size: 16px;
     margin-bottom: 10px;
 }
-
-
-/* -----------------End of all pages -------------*/
-
-
-
-/* ------ Media query sizes 480px and up) -----*/
-@media (max-width: 480px) {
-    
-/* Navigation bar */
-.nav-menu li a {
-    font-size: 100%;
-    text-align: justify;
-}
-     
-.nav-menu {
-    font-size: 1rem;
-}
-
-/* Home page elements */
-.cta-button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    align-items: center;
-}
-
-
- /* Footer */ 
- #social-networks i {
-    font-size: 16px;
-}
-
-/* Products page  */
-.pscontainer {
-    width: 100%; 
-    padding: 10px; 
-}
+/* Small phone screens*/
+@media (min-width: 320px) and (max-width: 575px) {
 
 }
 
-/* ------ Media query: large or landscape phones (576px and up to 768px) ------*/
-@media (max-width: 768px) {
+/* Larger phone screens*/
+@media (min-width: 576px) and (max-width: 767px) {
 
-/* Home page contents */
-.navbar {
-    height: 10%;
-}
+/*iPads & laptops*/
+@media (min-width: 768px) and (max-width: 991px) {
 
-.nav-menu {
-    font-size: 1rem;
-}
+/* Laptop screens*/
+@media (min-width: 992px) {
 
-.cta-button {
-    padding: 12px 25px;
-    font-size: 1rem;
-}
-
-/* Products page */
-.ps-content {
-    flex-direction: row;
-}
-
-.products-columns {
-    flex-direction: row;
-    flex: 2;
-}
-
-.pscolumn {
-    flex: 1;
-}
-
-.products-image {
-    flex: 1;
-}
-
-/* Contact page */
-.contact-content {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.form-section, .address-section {
-    width: 48%;
-}
-
-.address-section {
-    text-align: left;
-}
-
-/* Footer and bar */
-#social-networks i {
-    font-size: 30px;
-    z-index: 99;
-}
-
-.footer {
-    background-color: #f0f0f0; 
-    height: 10%;
-}
-}
-
-/* ------ Media query: large or landscape phones (900px and up to 1024px) ------*/
-@media (min-width: 900px) and (max-width: 1024px) {
-
-/* Nav bar */
-.navbar {
-    height: 10%;
- }
-
-.nav-menu li a {
-    font-size: 120%;
-}
-
-/* Home page content */
-.maincontent >h1 {
-  font-size: 5rem;
-}
-.maincontent >h2 {
-    font-size: 2.5rem;
-}
-.cta-button {
-    width: 130%;
-    height: 130%;
-}
-
-/* Contact us page */
-.contact-content {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.form-section, .address-section {
-    width: 55%;
-}
-
-.address-section {
-    text-align: left;
-}
-
-/* Footer bar & items */
-#social-networks i {
-    font-size: 190%;
-}
-.footer {
-    height: 10%;
-}
-
-/* Products page */
-
-header {
-    font-size: 120%;
-}
-.pscontainer > h1,h4 {
-    font-size: 220%;
-}
-
-.products-columns {
-    flex-direction: row;
-    flex: 2;
-    justify-content: space-between; 
-}
-
-.columns >p {
-    font-size: 4rem;
-}
-.columns {
-    flex: 1;
-    margin-right: 10px;
-}
-
-.columns > h2 {
-    font-size: 4rem;
-}
-
-/* image section */
-.products-image {
-    flex: 1;
-}
-
-.products-image img {
-    height: 100vh;
-    object-fit: cover;
- }
-
-}
-
-
-/* ------ Media query: large or landscape phones (1024px up to 1920px) ------*/
-@media (min-width: 1024px) and (max-width: 1920px) {
-
-/* Nav bar */
-.nav-menu li a {
-    font-size: 160%;
-}
-
-.cta-button {
-    width: 150%;
-    height: 150%;
-}
-.pscontainer >h1 {
-font-size: 50px;
-}
-.pscontainer >p {
-    font-size: 50px;
-    }
-/* Footer bar & items */
-#social-networks i {
-    font-size: 240%;
-}
-.products-columns {
-    flex-direction: row;
-    flex: 2;
-    justify-content: space-between;
-}
-
-/* Products page contents*/
-.columns {
-    flex: 1;
- }
-
-/* Remove margin-right on the last column */
-.columns:last-child {
-    margin-right: 0;
- }
-.products-image {
-    flex: 1;
- }
-
-.products-image img {
-    height: 100vh;
-    object-fit: cover;
-}
-
+/* Large laptop screens media queries */
+@media (min-width: 1200px) {
 }
