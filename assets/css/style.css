@@ -94,11 +94,14 @@ body, html {
     align-items: center;
 }
 
+/* Image Styling to Maintain Proportions */
 .maincontent img {
+    max-width: 100%;  /* Constrain width within container */
+    height: auto;     /* To maintain aspect ratio */
+    width: 67px;      /* Default width */
     z-index: 99;
-   width: 67px;
-   height: 67px;
 }
+
 
 /* General heading styles home page */ 
 .maincontent h1 {
@@ -177,7 +180,9 @@ body, html {
    margin-top: 25vh; /* Increased top margin for smaller screens */
    padding: 20px;
     }
-
+.maincontent img {
+    width: 80px;  /* Scales up for small screens */
+    }
 .nav-menu {
     flex-direction: column;
     }
@@ -202,22 +207,30 @@ body, html {
     padding: 15px 30px; /* Adjusted padding for easier tapping */
     margin-top: 20px;
     }
+
+.maincontent img {
+        width: 100px; /* Smaller width for small screens */
+    }
 }
 
 /* Large phone screens media queries */  
 @media (min-width: 576px) and (max-width: 767px) {
-    .maincontent {
+
+.maincontent {
         margin-top: 20vh;
     }
+.maincontent img {
+     width: 100px;
+    }
 
-    .maincontent h1 {
+.maincontent h1 {
         font-size: 3rem;
     }
 
-    .maincontent h2 {
+.maincontent h2 {
         font-size: 1.5rem;
     }
-    .cover-container {
+.cover-container {
         height: 100vh;
     }
 }  
@@ -226,47 +239,54 @@ body, html {
 /* Tablet screens media queries */
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .maincontent {
+.maincontent {
         margin-top: 18vh;
     }
-
-    .maincontent h1 {
+.maincontent img {
+        width: 120px;
+    }
+.maincontent h1 {
         font-size: 3.5rem;
     }
 
-    .maincontent h2 {
+.maincontent h2 {
         font-size: 1.7rem;
     }
-    .cover-container {
+
+.cover-container {
         height: 100vh;
     }
 }
 
 /* Desktop screens media queries */
 @media (min-width: 992px) {
-    .maincontent {
-        margin-top: 15vh;
+.maincontent {
+        margin-top: 20vh;
     }
-
-    .maincontent h1 {
+.maincontent img {
+        width: 140px;
+    }
+.maincontent h1 {
         font-size: 4rem;
     }
 
-    .maincontent h2 {
+.maincontent h2 {
         font-size: 2rem;
     }
 
-    .cover-container {
-        background-size: cover;
-        height: 100vh;
-    } 
-}  
+.cover-container img {
+        width: 100%;
+    }
+}
 
 /* Large laptop screens media queries */
 @media (min-width: 1200px) {
 /* Nav bar */
 .maincontent {
     margin-top: 12vh;
+}
+.maincontent img {
+    width: 160px;
 }
 
 .maincontent h1 {
@@ -278,8 +298,7 @@ body, html {
 }
 
 .cover-container {
-    background-size: cover;
-    height: 100vh;
+   width: 100%;
 }
 }
 
