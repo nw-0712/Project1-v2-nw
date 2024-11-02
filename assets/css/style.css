@@ -84,9 +84,9 @@ body, html {
     color: #fff;
     z-index: 99;
     align-items: center;
-    margin-top: 20px;
-    padding: 20%;/* Adjusted margin for smaller screens */
-    margin-top: 20vh; /* Added more top margin for spacing from navbar */
+    margin-top: 10vh; 
+    padding: 20px; 
+    margin-bottom: 100px; 
 }
 
 .logo-centered {
@@ -96,7 +96,7 @@ body, html {
 
 /* Image Styling to Maintain Proportions */
 .maincontent img {
-    max-width: 100%;  /* Constrain width within container */
+    max-width: 20%;  /* Constrain width within container */
     height: auto;     /* To maintain aspect ratio */
     width: 67px;      /* Default width */
     z-index: 99;
@@ -138,30 +138,29 @@ body, html {
 
 /* Footer */
 .footer {
-    background-color: #f0f0f0; 
-    padding: 20px 0;
-    height: 10%;
-    z-index: -1;
-    text-align: center;
+    background-color: #212A31; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    z-index: 10; 
 }
 
 #social-networks {
-    text-align: center;
-    padding: 20px 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; 
     list-style-type: none;
+    padding: 10px 0; 
+    margin: 0; 
     z-index: 99;
-    height: 10%;
-    margin-bottom: 15%;
 }
 
 #social-networks i {
-    font-size: 1.5rem;
-    padding: 20%;
-    color: #3a3a3a;
+    font-size: 2rem; 
+    padding: 10px; 
+    color: #f0f0f0;
     z-index: 99;
-    display: flex;
+    letter-spacing: 20px;
 }
 
 /* Media query for small phone*/
@@ -211,6 +210,13 @@ body, html {
 .maincontent img {
         width: 100px; /* Smaller width for small screens */
     }
+    .footer {
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+
+    #social-networks i {
+        font-size: 1.5rem; /* Smaller icons for small screens */
+    }
 }
 
 /* Large phone screens media queries */  
@@ -233,8 +239,14 @@ body, html {
 .cover-container {
         height: 100vh;
     }
-}  
+    footer {
+        padding: 20px 0; /* Normal padding for this range */
+    }
 
+    #social-networks i {
+        font-size: 1.8rem; /* Adjust icon size */
+}
+}
 
 /* Tablet screens media queries */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -256,10 +268,23 @@ body, html {
 .cover-container {
         height: 100vh;
     }
+    .footer {
+        padding: 25px 0; /* Increase padding for medium screens */
+    }
+
+    #social-networks i {
+        font-size: 2rem; /* Larger icons */
+    }
 }
+
 
 /* Desktop screens media queries */
 @media (min-width: 992px) {
+
+.nav-menu li {
+        margin-left: 40px;
+    }
+    
 .maincontent {
         margin-top: 20vh;
     }
@@ -277,11 +302,22 @@ body, html {
 .cover-container img {
         width: 100%;
     }
+
+    .footer {
+        padding: 30px 0; /* More padding for larger screens */
+    }
+
+    #social-networks i {
+        font-size: 2rem; /* Consistent size for large screens */
+    }
 }
 
 /* Large laptop screens media queries */
 @media (min-width: 1200px) {
-/* Nav bar */
+
+.nav-menu li {
+    margin-left: 50px;
+}
 .maincontent {
     margin-top: 2vh;
 }
@@ -300,155 +336,247 @@ body, html {
 .cover-container {
    width: 100%;
 }
+.footer {
+    padding: 35px 0; /* Further increase padding for very large screens */
+}
+
+#social-networks i {
+    font-size: 2rem; /* Maintain size consistency */
+}
 }
 
 /* ----------- Products & services page --------------- */
 header {
     text-align: center;
     padding: 20px;
-    margin-top: 22%;
     font-size: 2rem;
+    margin-top: 20px;
 }
 
 .pscontainer {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-left: 40px;
-    margin-right: 40px;
+    padding: 10px 20px;
 }
-  
+
+.pscontainer h1 {
+    position: sticky; /* Keeps the header at the top */
+    top: 0;
+    font-size: 2.5rem;
+    background-color: white; /* Optional: Adds background for better readability */
+    z-index: 1; /* Ensures it stays above other elements */
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
 .pscontainer h4 {
     margin-top: 11px;
     font-size: 2rem;
 }
-  
+
 .ps-content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 20px;
 }
-  
+
 .products-text-section h2  {
     padding: 20px;
-    flex: 1;
-    font-size: 2.1rem;
-    padding-left: 50px;
+    font-size: 2.4rem;
+    padding-left: 20px;
 }
+
 .products-text-section p {
-    font-size: 2rem;  
-    padding-left: 50px;
+    font-size: 1.8rem;
+    padding-left: 20px;
+    margin: 0; /* Prevents overflow */
+    word-wrap: break-word; /* Prevents text overflow */
 }
+
 .products-columns {
     display: flex;
     flex-direction: column;
-    column-gap: 25px;
-    padding-left: 40px;
-    padding-right: 40px;
+    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-  
+
 .columns h2 {
-    font-size: 2.6rem ;
+    font-size: 2.6rem;
 }
+
 .columns p {
-    font-size: 2rem;
-/* Default spacing for paragraphs */
-    margin-bottom: 24px; 
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    word-wrap: break-word; /* Prevents overflow */
 }
+
 .columns {
     padding: 16px;
     border: 1px solid #ccc;
     margin: 13px 0;
-    padding-left: 40px;
 }
-  
- /* Image section */
+
+/* Image section */
 .products-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
 }
-  
+
 .products-image img {
     width: 100%;
     height: auto;
     max-height: 100vh;
-    object-fit: cover;
+    object-fit: contain; /* Ensures image is fully visible */
 }
-
 
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 575px) {
-    
-/* Products page  */
-.pscontainer {
-    width: 100%; 
-    padding: 10px; 
+    .pscontainer h1, .pscontainer h4 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .products-columns {
+        flex-direction: column; /* Prevents split into columns */
+    }
+
+    .products-text-section h2 {
+        font-size: 2.4rem;
+    }
+
+    .products-text-section p {
+        font-size: 1.8rem;
+        margin: 0; /* Prevents cutoff */
+    }
+
+    .columns h2 {
+        font-size: 2.2rem;
+    }
+
+    .columns p {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .products-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .products-image img {
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        object-fit: contain;
+    }
 }
 
-.products-columns {
-    flex-direction: row;
-    flex: 2;
-    justify-content: space-between;
+/* Larger phone screens*/
+@media (min-width: 576px) and (max-width: 768px) {
+    header {
+        font-size: 3rem;
+    }
+
+    .pscontainer h1, .pscontainer h4 {
+        font-size: 2.8rem;
+    }
+
+    .columns h2 {
+        font-size: 2.4rem;
+    }
+
+    .columns p {
+        font-size: 1.8rem;
+    }
 }
 
-/* Products page contents*/
-.columns {
-    flex: 1;
- }
 
-/* Remove margin-right on the last column */
-.columns:last-child {
-    margin-right: 0;
- }
-.products-image {
-    flex: 1;
- }
+/* Screens for ipads and small laptops*/
+@media (min-width: 768px) {
+    header {
+        font-size: 3.5rem;
+    }
 
-.products-image img {
-    height: 100vh;
-    object-fit: cover;
-}
-header {
-    font-size: 80px;
-}
-.pscontainer h1,h4 {
-    font-size: 220%;
+    .pscontainer h1 {
+        font-size: 3rem;
+    }
+
+    .columns h2 {
+        font-size: 2.8rem;
+    }
+
+    .columns p {
+        font-size: 2rem;
+    }
 }
 
-.products-columns {
-    flex-direction: row;
-    flex: 2;
-    justify-content: space-between; 
+/* Large screens: 992px and up - Switch to two-column layout */
+@media (min-width: 992px) {
+    .pscontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .products-text-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .products-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+        gap: 20px;
+    }
+
+    .columns h2 {
+        font-size: 3rem;
+    }
+
+    .columns p {
+        font-size: 2.5rem;
+    }
+
+    .products-image {
+        flex: 1;
+        max-width: 50%; /* Ensures image takes up half of the layout */
+        padding: 0;
+    }
+
+    .products-image img {
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        object-fit: contain;
+    }
 }
 
-.columns p {
-    font-size: 4rem;
-}
-.columns {
-    flex: 1;
-    margin-right: 10px;
-}
+/* Extra-large screens: 1200px and up */
+@media (min-width: 1200px) {
+    .pscontainer {
+        padding: 60px;
+    }
 
-.columns h2 {
-    font-size: 4rem;
+    .columns h2 {
+        font-size: 3.2rem;
+    }
+
+    .columns p {
+        font-size: 2.8rem;
+    }
 }
-
-/* image section */
-.products-image {
-    flex: 1;
-}
-
-.products-image img {
-    height: 100vh;
-    object-fit: cover;
- }
-
-}
-
 
 /* ------------- Contact us page ---------------*/
 
