@@ -12,11 +12,12 @@
 body, html {
     height: 100%;
     font-family: Lato, sans-serif;
+    height: 100%; 
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #003135;
+    background-color: #1F8BA5;
     padding: 17px 22px;
     position: fixed;
     width: 100%;
@@ -60,7 +61,8 @@ body, html {
     width: 100vw;
     background-attachment: fixed; /* Ensure background scales with screen */
     position: relative;
-    overflow: hidden; /* Prevent image overflow */
+    overflow: hidden;
+    padding-bottom: 80px; 
 }
 
 .cover-container img {
@@ -77,6 +79,7 @@ body, html {
     height: 100vh;
     display: flex;
     justify-content: center;
+    padding-bottom: 80px; 
 }
 
 .maincontent {
@@ -84,9 +87,9 @@ body, html {
     color: #fff;
     z-index: 99;
     align-items: center;
-    margin-top: 10vh; 
+    margin-top: 40vh; 
     padding: 20px; 
-    margin-bottom: 100px; 
+    margin: 0;
 }
 
 .logo-centered {
@@ -96,7 +99,7 @@ body, html {
 
 /* Image Styling to Maintain Proportions */
 .maincontent img {
-    max-width: 20%;  /* Constrain width within container */
+    max-width: 10%;  /* Constrain width within container */
     height: auto;     /* To maintain aspect ratio */
     width: 67px;      /* Default width */
     z-index: 99;
@@ -106,21 +109,21 @@ body, html {
 /* General heading styles home page */ 
 .maincontent h1 {
     font-size: 3.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #fff;
     text-align: center;
 }
 
 .maincontent h2 {
     font-size: 2rem; /* Increased font size */
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #fff;
     letter-spacing: 5px;
 }
 
 /* Discover CTA button */ 
 .cta-button {
-    background-color: #003135;
+    background-color: #1F8BA5;
     color: #fff;
     padding: 17px 30px;
     text-decoration: none;
@@ -138,12 +141,14 @@ body, html {
 
 /* Footer */
 .footer {
-    background-color: #212A31; 
+    background-color: #1F8BA5; 
     color: white; 
     text-align: center; 
-    padding: 20px; 
-    position: relative; 
-    z-index: 10; 
+    padding: 10px 0;
+    position: absolute;
+    z-index: 0; 
+    width: 100%; 
+    bottom: 0;
 }
 
 #social-networks {
@@ -152,7 +157,6 @@ body, html {
     list-style-type: none;
     padding: 10px 0; 
     margin: 0; 
-    z-index: 99;
 }
 
 #social-networks i {
@@ -160,7 +164,7 @@ body, html {
     padding: 10px; 
     color: #f0f0f0;
     z-index: 99;
-    letter-spacing: 20px;
+    letter-spacing: 40px;
 }
 
 /* Media query for small phone*/
@@ -176,8 +180,8 @@ body, html {
     }
 
 .maincontent {
-   margin-top: 25vh; /* Increased top margin for smaller screens */
-   padding: 20px;
+   margin-top: 20vh; 
+   padding: 15px;
     }
 .maincontent img {
     width: 80px;  /* Scales up for small screens */
@@ -192,12 +196,12 @@ body, html {
     }
 
 .maincontent h1 {
-    font-size: 3.8rem !important; /* Increased font size */
+    font-size: 3rem; /* Increased font size */
     line-height: 1.3; /* Adjusted line height for better readability */
     }
 
 .maincontent h2 {
-    font-size: 2.1rem !important; /* Increased font size */
+    font-size: 1.5rem; /* Increased font size */
     letter-spacing: 2.5px;
     }
 
@@ -222,8 +226,9 @@ body, html {
 /* Large phone screens media queries */  
 @media (min-width: 576px) and (max-width: 767px) {
 
-.maincontent {
-        margin-top: 20vh;
+    .maincontent {
+        padding: 20px;
+        margin-top: 30vh; /* Adjust margin for smaller screens */
     }
 .maincontent img {
      width: 100px;
@@ -251,8 +256,9 @@ body, html {
 /* Tablet screens media queries */
 @media (min-width: 768px) and (max-width: 991px) {
 
-.maincontent {
-        margin-top: 18vh;
+    .maincontent {
+        padding: 20px;
+        margin-top: 40vh; 
     }
 .maincontent img {
         width: 120px;
@@ -285,8 +291,9 @@ body, html {
         margin-left: 40px;
     }
     
-.maincontent {
-        margin-top: 20vh;
+    .maincontent {
+        padding: 20px;
+        margin-top: 50vh; 
     }
 .maincontent img {
         width: 140px;
@@ -319,18 +326,19 @@ body, html {
     margin-left: 50px;
 }
 .maincontent {
-    margin-top: 2vh;
+    padding: 20px;
+    margin-top: 50vh; 
 }
 .maincontent img {
     width: 160px;
 }
 
 .maincontent h1 {
-    font-size: 6.5rem;
+    font-size: 6rem;
 }
 
 .maincontent h2 {
-    font-size: 3.1rem;
+    font-size: 3rem;
 }
 
 .cover-container {
@@ -341,7 +349,7 @@ body, html {
 }
 
 #social-networks i {
-    font-size: 2rem; /* Maintain size consistency */
+    font-size: 2rem;
 }
 }
 
@@ -361,11 +369,11 @@ header {
 }
 
 .pscontainer h1 {
-    position: sticky; /* Keeps the header at the top */
+    position: sticky; 
     top: 0;
     font-size: 2.5rem;
-    background-color: white; /* Optional: Adds background for better readability */
-    z-index: 1; /* Ensures it stays above other elements */
+    background-color: white; 
+    z-index: 1; 
     padding: 20px 0;
     margin: 0;
     text-align: center;
@@ -380,19 +388,7 @@ header {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-}
-
-.products-text-section h2  {
-    padding: 20px;
-    font-size: 2.4rem;
-    padding-left: 20px;
-}
-
-.products-text-section p {
-    font-size: 1.8rem;
-    padding-left: 20px;
-    margin: 0; /* Prevents overflow */
-    word-wrap: break-word; /* Prevents text overflow */
+    flex: 1;
 }
 
 .products-columns {
@@ -434,8 +430,38 @@ header {
     object-fit: contain; /* Ensures image is fully visible */
 }
 
+/* Footer */
+.footer {
+    background-color: #1F8BA5; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0;
+    position: relative;
+    z-index: 0; 
+    width: 100%; 
+}
+
+#social-networks {
+    display: flex;
+    justify-content: center; 
+    list-style-type: none;
+    padding: 10px 0; 
+    margin: 0; 
+}
+
+#social-networks i {
+    font-size: 2rem; 
+    padding: 10px; 
+    color: #f0f0f0;
+    z-index: 99;
+    letter-spacing: 40px;
+}
+
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 575px) {
+    header {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
     .pscontainer h1, .pscontainer h4 {
         font-size: 2.5rem;
         text-align: center;
@@ -443,18 +469,14 @@ header {
     }
 
     .products-columns {
-        flex-direction: column; /* Prevents split into columns */
+        flex-direction: column; /* Keep single column layout */
+        padding: 0; 
     }
-
-    .products-text-section h2 {
-        font-size: 2.4rem;
+    .columns {
+        padding: 10px; /* Adjust padding */
+        width: 100%; /* Full width for columns */
+        max-width: none; /* Ensure columns can use full width */
     }
-
-    .products-text-section p {
-        font-size: 1.8rem;
-        margin: 0; /* Prevents cutoff */
-    }
-
     .columns h2 {
         font-size: 2.2rem;
     }
@@ -489,12 +511,22 @@ header {
         font-size: 2.8rem;
     }
 
+    .columns {
+        flex: 1; /* Allow columns to share space */
+        min-width: 300px; /* Minimum width for columns */
+        max-width: 48%; /* Max width for columns */
+    }
     .columns h2 {
         font-size: 2.4rem;
     }
 
     .columns p {
         font-size: 1.8rem;
+    }
+    .products-columns {
+        flex-direction: row; /* Change to row for wider screens */
+        flex-wrap: wrap; /* Allows wrapping */
+        gap: 15px; /* Space between columns */
     }
 }
 
@@ -509,14 +541,26 @@ header {
         font-size: 3rem;
     }
 
+    .products-columns {
+        flex-direction: row; /* Change to row for wider screens */
+        flex-wrap: wrap; /* Allows wrapping */
+        gap: 15px; /* Space between columns */
+    }
+    .columns {
+        flex: 1; /* Allow columns to share space */
+        min-width: 300px; /* Minimum width for columns */
+        max-width: 48%; /* Two columns spread out */
+    }
+
     .columns h2 {
-        font-size: 2.8rem;
+        font-size: 2.4rem; /* Adjust heading size */
     }
 
     .columns p {
-        font-size: 2rem;
+        font-size: 1.8rem; 
     }
 }
+
 
 /* Large screens: 992px and up - Switch to two-column layout */
 @media (min-width: 992px) {
@@ -536,17 +580,25 @@ header {
     }
 
     .products-columns {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
-        gap: 20px;
+        flex-direction: row; /* Two columns layout */
     }
 
+    .columns {
+        min-width: 400px; 
+    }
     .columns h2 {
         font-size: 3rem;
     }
 
     .columns p {
         font-size: 2.5rem;
+    }
+    header {
+        font-size: 2.5rem; 
+    }
+
+    .footer {
+        position: relative; /* Position relative to allow flow */
     }
 
     .products-image {
@@ -568,14 +620,34 @@ header {
     .pscontainer {
         padding: 60px;
     }
-
-    .columns h2 {
-        font-size: 3.2rem;
-    }
-
-    .columns p {
-        font-size: 2.8rem;
-    }
+        .products-columns {
+            flex-direction: row; 
+        }
+    
+        .columns {
+            min-width: 550px; /* Minimum width for columns */
+            max-width: 30%; /* Wider space allocation */
+        }
+    
+        .columns h2 {
+            font-size: 2.8rem; 
+        }
+    
+        .columns p {
+            font-size: 2rem; 
+        }
+    
+        header {
+            font-size: 3rem; 
+        }
+    
+        .footer {
+            padding: 20px 0; 
+        }
+    
+        #social-networks i {
+            font-size: 2.5rem; 
+        }
 }
 
 /* ------------- Contact us page ---------------*/
