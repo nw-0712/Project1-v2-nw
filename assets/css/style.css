@@ -283,18 +283,18 @@ body, html {
 @media (min-width: 1200px) {
 /* Nav bar */
 .maincontent {
-    margin-top: 12vh;
+    margin-top: 2vh;
 }
 .maincontent img {
     width: 160px;
 }
 
 .maincontent h1 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
 }
 
 .maincontent h2 {
-    font-size: 2.5rem;
+    font-size: 3.1rem;
 }
 
 .cover-container {
