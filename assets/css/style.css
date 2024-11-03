@@ -125,7 +125,7 @@ html {
 	/* Increased font size */
 	margin-bottom: 10px;
 	color: #fff;
-	letter-spacing: 8px;
+	letter-spacing: 15px;
 }
 
 /* Discover CTA button */
@@ -421,6 +421,12 @@ header h1 {
 }
 
 /* Products Section */
+.products-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
 .products-section {
     display: flex;
     flex-direction: column;
@@ -491,6 +497,9 @@ header h1 {
 
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 575px) {
+.products-layout {
+    flex-direction: column;
+    }
 .products-section {
     padding: 0 10px;
 }
@@ -513,6 +522,9 @@ header h1 {
 
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 768px) {
+.products-layout {
+    flex-direction: column;
+    }
 .pscontainer h1 {
     font-size: 2.2rem;
 }
@@ -528,11 +540,23 @@ header h1 {
 /* Ensure image occupies full width */
 .products-image img {
 	max-height: 60vh;
+	width: 100%;
 	}
 }
 
 /* Screens for ipads and small laptops*/
 @media (min-width: 768px) {
+.products-layout {
+    flex-direction: column;
+	gap: 20px;
+}
+.products-section {
+	flex: 1;
+}
+.products-image img {
+     width: 100%;
+	 height: auto; 
+}
 .products-section {
     display: flex;
     flex-direction: row;
@@ -549,17 +573,20 @@ header h1 {
     max-width: 50%;
     padding-left: 20px;
     display: flex;
-    justify-content: flex-end;
-    }
+}
 }
 
 /* Large screens: 992px and up - Switch to two-column layout */
 @media (min-width: 992px) {
+.products-layout {
+    flex-direction: row;
+    gap: 20px;
+}
 .products-section {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: flex-start;
+    flex: 1;
  }
 
  .columns {
@@ -578,7 +605,7 @@ header h1 {
 	max-width: 50%;
 	padding-left: 20px;
 	display: flex;
-	justify-content: flex-end;
+	padding-left: 20px;
 }
 .products-image img {
 	width: 100%;
