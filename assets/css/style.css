@@ -56,7 +56,7 @@ html {
 
 /* Cover Section */
 .cover-container {
-	background-image: url('assets/images/nomad-pro8-unsplash.jpg');
+	background-image: url('assets/images/pexels298905.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -177,221 +177,215 @@ html {
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 576px) {
 
-	.navbar {
-		padding: 20px 20px;
-		/* Increased padding for better visibility */
-	}
+.navbar {
+	padding: 20px 20px;
+/* Increased padding for better visibility */
+}
 
-	.cover-container {
-		background-size: contain;
-		/* Ensure the image fits smaller screens */
-		height: 100vh;
-	}
+.cover-container {
+	background-size: contain;
+/* Ensure the image fits smaller screens */
+	height: 100vh;
+}
 
-	.maincontent {
-		margin-top: 20vh;
-		padding: 15px;
-	}
+.maincontent {
+	margin-top: 20vh;
+	padding: 15px;
+}
 
-	.maincontent img {
-		width: 80px;
-		/* Scales up for small screens */
-	}
+.maincontent img {
+	width: 80px;
+/* Scales up for small screens */
+}
 
-	.nav-menu {
-		flex-direction: column;
-	}
+.nav-menu {
+	flex-direction: column;
+}
 
-	.nav-menu li {
-		margin-left: 0;
-		margin-bottom: 16px;
-	}
+.nav-menu li {
+	margin-left: 0;
+	margin-bottom: 16px;
+}
 
-	.maincontent h1 {
-		font-size: 3rem;
-		/* Increased font size */
-		line-height: 1.3;
-		/* Adjusted line height for better readability */
-	}
+.maincontent h1 {
+	font-size: 3rem;
+	line-height: 1.3;
+/* Adjusted line height for better readability */
+}
 
-	.maincontent h2 {
-		font-size: 1.5rem;
-		/* Increased font size */
-		letter-spacing: 2.5px;
-	}
+.maincontent h2 {
+	font-size: 1.5rem;
+	letter-spacing: 2.5px;
+}
 
-	.cta-button {
-		font-size: 1.2rem;
-		/* Increased font size */
-		padding: 15px 30px;
-		/* Adjusted padding for easier tapping */
-		margin-top: 20px;
-	}
+.cta-button {
+	font-size: 1.2rem;
+	padding: 15px 30px;
+/* Adjusted padding for easier tapping */
+	margin-top: 20px;
+}
 
-	.maincontent img {
-		width: 100px;
-		/* Smaller width for small screens */
-	}
+.maincontent img {
+	width: 100px;
+/* Smaller width for small screens */
+}
 
-	.footer {
-		padding: 15px 0;
-		/* Adjust padding for smaller screens */
-	}
+.footer {
+	padding: 15px 0;
+/* Adjust padding for smaller screens */
+}
 
-	#social-networks i {
-		font-size: 1.5rem;
-		/* Smaller icons for small screens */
-	}
+#social-networks i {
+	font-size: 1.5rem;
+/* Smaller icons for small screens */
+}
 }
 
 /* Large phone screens media queries */
 @media (min-width: 576px) and (max-width: 767px) {
 
-	.maincontent {
-		padding: 20px;
-		margin-top: 30vh;
-		/* Adjust margin for smaller screens */
-	}
+.maincontent {
+	padding: 20px;
+	margin-top: 30vh;
+/* Adjusted margin for smaller screens */
+}
 
-	.maincontent img {
-		width: 100px;
-	}
+.maincontent img {
+	width: 100px;
+}
 
-	.maincontent h1 {
-		font-size: 2.7rem;
-	}
+.maincontent h1 {
+		-size: 2.7rem;
+}
 
-	.maincontent h2 {
-		font-size: 1rem;
-		letter-spacing: 4px;
-	}
+.maincontent h2 {
+	font-size: 1rem;
+	letter-spacing: 4px;
+}
 
-	.cover-container {
-		height: 100vh;
-	}
+.cover-container {
+	height: 100vh;
+}
 
-	footer {
-		padding: 20px 0;
-		/* Normal padding for this range */
-	}
+footer {
+	padding: 20px 0;
+}
 
-	#social-networks i {
-		font-size: 1.8rem;
-		/* Adjust icon size */
-	}
+#social-networks i {
+	font-size: 1.8rem;
+}
 }
 
 /* Tablet screens media queries */
 @media (min-width: 768px) and (max-width: 991px) {
 
-	.maincontent {
-		padding: 20px;
-		margin-top: 40vh;
-	}
+.maincontent {
+	padding: 20px;
+	margin-top: 40vh;
+}
 
-	.maincontent img {
-		width: 120px;
-	}
+.maincontent img {
+	width: 120px;
+}
 
-	.maincontent h1 {
-		font-size: 3.5rem;
-	}
+.maincontent h1 {
+	font-size: 3.5rem;
+}
 
-	.maincontent h2 {
-		font-size: 1.7rem;
-	}
+.maincontent h2 {
+	font-size: 1.7rem;
+}
 
-	.cover-container {
+.cover-container {
 		height: 100vh;
-	}
+}
 
-	.footer {
-		padding: 25px 0;
-	/* Increase padding for medium screens */
-	}
+.footer {
+	padding: 25px 0;
+/* Increase padding for medium screens */
+}
 
-	#social-networks i {
-		font-size: 2rem;
-	/* Larger icons */
-	}
+#social-networks i {
+	font-size: 2rem;
+}
 }
 
 
 /* Desktop screens media queries */
 @media (min-width: 992px) {
 
-	.nav-menu li {
-		margin-left: 40px;
-	}
+.nav-menu li {
+	margin-left: 40px;
+}
 
-	.maincontent {
-		padding: 20px;
-		margin-top: 50vh;
-	}
+.maincontent {
+	padding: 20px;
+	margin-top: 50vh;
+}
 
-	.maincontent img {
-		width: 140px;
-	}
+.maincontent img {
+	width: 140px;
+}
 
-	.maincontent h1 {
-		font-size: 4rem;
-	}
+.maincontent h1 {
+	font-size: 4rem;
+}
 
-	.maincontent h2 {
-		font-size: 2rem;
-	}
+.maincontent h2 {
+	font-size: 2rem;
+}
 
-	.cover-container img {
-		width: 100%;
-	}
+.cover-container img {
+	width: 100%;
+}
 
-	.footer {
-		padding: 30px 0;
-	/* More padding for larger screens */
-	}
+.footer {
+	padding: 30px 0;
+/* More padding for larger screens */
+}
 
-	#social-networks i {
-		font-size: 2rem;
-	/* Consistent size for large screens */
-	}
+#social-networks i {
+	font-size: 2rem;
+/* Consistent size for large screens */
+}
 }
 
 /* Large laptop screens media queries */
 @media (min-width: 1200px) {
 
-	.nav-menu li {
-		margin-left: 50px;
-	}
+.nav-menu li {
+	margin-left: 50px;
+}
 
-	.maincontent {
-		padding: 20px;
-		margin-top: 50vh;
-	}
+.maincontent {
+	padding: 20px;
+	margin-top: 50vh;
+}
 
-	.maincontent img {
-		width: 110px;
-	}
+.maincontent img {
+	width: 110px;
+}
 
-	.maincontent h1 {
-		font-size: 5.2rem;
-	}
+.maincontent h1 {
+	font-size: 5.2rem;
+}
 
-	.maincontent h2 {
-		font-size: 2.1rem;
-	}
+.maincontent h2 {
+	font-size: 2.1rem;
+}
 
-	.cover-container {
-		width: 100%;
-	}
+.cover-container {
+	width: 100%;
+}
 
-	.footer {
-		padding: 35px 0;
+.footer {
+	padding: 35px 0;
 /* Further increase padding for very large screens */
-	}
+}
 
-	#social-networks i {
-		font-size: 2rem;
-	}
+#social-networks i {
+	font-size: 2rem;
+}
 }
 
 /* ----------- Products & services page --------------- */
@@ -443,6 +437,7 @@ header h1 {
     padding: 19px;
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
     border: 1px solid #ccc;
     margin: 10px 0;
     width: 100%;
@@ -469,15 +464,14 @@ header h1 {
     padding: 20px;
 	width: 100%;
 	justify-content: center;
-	flex: 2; /* Places image at the bottom */
+	flex: 3; /* Places image at the bottom */
 }
 
 .products-image img {
 	width: 100%;
     height: auto;
-	max-height: 80vh; 
-    object-fit: contain;
-	flex: 2; /* Places image at the bottom */
+	max-height: 80vh;
+	object-fit: contain;
 }
 
 /* Footer */
@@ -521,13 +515,13 @@ header h1 {
 	margin-bottom: 20px; 
 	flex-direction: row;
 	flex-wrap: wrap;
-    }
+}
 
 .columns {
-        flex: 1 1 40%; /* Two columns, each taking about half the width */
-		box-sizing: border-box;
-		order: 1; 
-    }
+    flex: 1 1 40%; /* Two columns, each taking about half the width */
+	box-sizing: border-box;
+	flex: 1; 
+}
 .columns h2 {
     font-size: 1.8rem;
 }
@@ -536,10 +530,10 @@ header h1 {
     font-size: 1.7rem;
 }
 
- /* Ensure image occupies full width */
- .products-image {
+/* Ensure image occupies full width */
+.products-image {
 	flex-basis: 100%; 
-	order: 3; /* Place image below text */
+	flex: 3; /* Places image below text */
 }
 
 .products-image img {
@@ -554,7 +548,7 @@ header h1 {
 .products-wrapper {
 	flex-direction: column;
 	display: flex;
-    }
+}
 
 .products-section {
     display: flex;
@@ -566,73 +560,78 @@ header h1 {
 
 .products-image {
 	flex-basis: 100%;
-	order: 3; 
+	flex: 3; 
 }
 
 /* Ensure image occupies full width */
 .products-image img {
-        width: 100%;
-        max-height: 60vh;
+    width: 100%;
+    max-height: 60vh;
  }
 
 .products-image {
 	order: 3; 
 }
+
 .columns {
-        flex: 1 1 43%;  /* Two columns */
+    flex: 1 1 43%;  /* Two columns */
 }
 .columns h2 {
-        font-size: 2rem;
+    font-size: 2rem;
 }
 
 .columns p {
-        font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 }
 
 /* Screens for ipads and small laptops*/
 @media (min-width: 768px) {
 .products-wrapper {
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
 }
 
 .products-section {
     flex: 1;
 	display: flex;
-    flex-direction: column;
+    flex-direction: row;
+	flex-wrap: nowrap;
 }
 
 .products-image {
-    flex: 1;
-    max-width: 70%; /* Image takes up half the width */
+    max-width: 100%; /* Image takes up half the width */
     padding-left: 20px;
-	order: 2;
+	flex: 3;
+	padding-top: 20px;
+	height: 230vh;
+
 }
 
 .products-image img {
     width: 100%;
-	height: 170vh;
+	height: contain;
 }
+
 .columns {
-    flex: 1;
-    width: 100%;
-    }
+	flex: 1 1 48%;
+}
 }
 
 
 /* Large screens: 992px and up - Switch to two-column layout */
 @media (min-width: 992px) {
 .products-wrapper {
-        flex-direction: row;
-        gap: 20px;
-    }
+    flex-direction: row;
+    gap: 20px;
+}
+
 .columns h2 {
     font-size: 2.5rem;
 }
 
 .columns p {
-    font-size: 1.9;
+    font-size: 1.9rem;
 }
 
 .products-image img {
@@ -645,13 +644,15 @@ header h1 {
 @media (min-width: 1200px) {
 
 .products-wrapper {
-        flex-direction: row;
-        gap: 20px;
-    }
+    flex-direction: row;
+    gap: 20px;
+}
+
 .pscontainer h1 {
 	font-size: 2.5em;
+}
 
-}.products-section {
+.products-section {
     gap: 40px;
 }
 
@@ -689,6 +690,9 @@ header h1 {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
+	background-color: #3964641c;
+	border-radius: 8px;
+    box-shadow: 0 2px 8px #00372A;
 }
 
 .contact-content {
@@ -746,7 +750,7 @@ form button:hover {
 }
 
 .address-section p {
-	font-size: 16px;
+	font-size: 17px;
 	margin-bottom: 10px;
 }
 
@@ -794,8 +798,22 @@ form input, form textarea {
 }
 
 form button {
-    font-size: 16px;
+    font-size: 19px;
     padding: 16px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.contact-container h2, h3 {
+	font-size: 1.7rem;
+}
+.address-section p {
+	font-size: 19px;
+	margin-bottom: 10px;
 }
 }
 
@@ -814,6 +832,19 @@ form button {
     font-size: 17px;
     padding: 18px;
 }
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+.contact-container h2, h3 {
+	font-size: 1.9rem;
+}
+.address-section p {
+	font-size: 23px;
+	margin-bottom: 10px;
+}
 }
 
 /* Large laptop screens media queries */
@@ -823,12 +854,25 @@ form button {
 }
 
 form input, form textarea {
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px;
 }
 
 form button {
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px;
+}
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.contact-container h2, h3 {
+	font-size: 2rem;
+}
+.address-section p {
+	font-size: 25px;
+	margin-bottom: 10px;
 }
 }
