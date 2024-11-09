@@ -43,7 +43,7 @@ html {
 
 .nav-menu li a {
 	color: #f0f0f0;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	text-decoration: none;
 	letter-spacing: 2px;
 }
@@ -388,9 +388,8 @@ footer {
 }
 }
 
-/* ----------- Therapies & Treatments page --------------- */
+/* ---------------- Therapies & Treatments page ----------------- */
 
-/* Style so content to fill screensize & footer to stick to bottom */
 
 header {
     text-align: center;
@@ -411,77 +410,91 @@ header h1 {
 	margin-top: 10vh;
 }
 
-#products-wrapper {
-    min-height: calc(100vh - 200px);
+/* General Styling */
+.products-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+header h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: white;
+    font-size: 2rem;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-top: 10vh;
+}
+
+/* Treatment Section Layout */
 .treatment-section {
-    position: relative;
-    height: 450px;
+    display: flex;
+	flex-direction: column; /* Stacked layout by default */
+    margin-bottom: 40px;
+    align-items: stretch; /* Ensures content and image have the same height */
+    gap: 20px;
 }
 
-.treatment-heading h2 {
-    position: absolute;
-    display: inline-block;
-    height: 450px;
+.treatment-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    background-color: #f0f4f8; 
+    box-sizing: border-box;
+    justify-content: center;
 }
 
-.treatment-section p {
-    padding: 0 10%;
-    line-height: 20px;
-    text-align: justify;
+.treatment-content h2 {
+    font-size: 1.5rem;   
+}
+.treatment-content p {
+    font-size: 1.2rem;   
 }
 
+/* Image Styling */
+.treatment-image {
+    flex: 1;
+    height: 100%; /* Matches height of text content */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    max-width: 100%;
+    background-size: cover; /* Ensures background covers the entire div */
+    background-position: center;
+}
+
+/* Book Button Styling */
 .book-button {
-    display: block;
-    width: max-content;
-    font-size: 120%;
-    margin: 30px auto;
-    padding: 10px;
+    display: inline-block;
+    margin: 20px auto 0; /* Centers button horizontally */
+    padding: 10px 20px;
+    background-color: #3EB9BB; 
+    color: #fff;
+    text-align: center;
     text-decoration: none;
-    color: #e2ecba;
-    background-color: #454720;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .book-button:hover {
-    background-color: #784834;
-}
-.treatment-image {
-    position: absolute;
-    height: 450px;
+    background-color: #0056b3; /* Darker shade for hover effect */
 }
 
-.right-treatment-heading {
-    left: 66%;
-    width: 33%;
+/* Image Placement Variations */
+.left-image .treatment-image {
+    order: 1;
+}
+.left-image .treatment-content {
+    order: 2;
 }
 
-.left-treatment-image {
-    width: 66%;
+.right-image .treatment-content {
+    order: 1;
 }
-
-.left-treatment-heading {
-    left: 0;
-    width: 33%;
-}
-
-.right-treatment-image {
-    left: 33%;
-    width: 66%;
-}
-
-#wellness-image {
-    background: url(assets/images/wellness-image.jpg) center center / cover no-repeat;
-}
-
-#health-image {
-    background: url(assets/images/health-image.jpg) center center / cover no-repeat;
-}
-
-#fitness-image {
-    background: url(assets/images/fitness-image.jpg) center center / cover no-repeat;
-}
-
 
 
 /* Footer */
@@ -510,78 +523,65 @@ header h1 {
     letter-spacing: 40px;
 }
 
+
+/* -------------------Media Queries---------------------------- */
+
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 575px) {
 
-	.banner-image {
-		height: 300px;
-	}
-
-	.treatment-image {
-		height: 300px;
-	}
-
-	#map iframe{
-		height: 300px;
-	}
-
+	.treatment-section {
+        flex-direction: column;
+    }
+    .treatment-image,
+    .treatment-content {
+        max-width: 100%;
+    }
 }
 
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 768px) {
-	.banner-image {
-		height: 300px;
-	}
-
-	.treatment-image {
-		height: 300px;
-	}
-
-	#map iframe{
-		height: 300px;
-	}
+	.treatment-section {
+        flex-direction: column;
+    }
+    .treatment-image,
+    .treatment-content {
+        max-width: 100%;
+    }
 }
 
 /* Screens for ipads and small laptops*/
 @media (min-width: 768px) {
-	.banner-image {
-		height: 300px;
-	}
-
-	.treatment-image {
-		height: 300px;
-	}
-
-	#map iframe{
-		height: 300px;
-	}
+	.treatment-section {
+        flex-direction: row;
+    }
+    .treatment-image, .treatment-content {
+        max-width: 50%;
+    }	
 }
 
 
 /* Large screens: 992px and up - Switch to two-column layout */
 @media (min-width: 992px) {
-
+	.treatment-section {
+        flex-direction: column;
+    }
+    .treatment-image,
+    .treatment-content {
+        max-width: 100%;
+    }
  
 }
 
 /* Extra-large screens: 1200px and up */
 @media (min-width: 1200px) {
-	.treatment-section {
-        position: relative;
-        display: inline;
+	.products-wrapper {
+        max-width: 1200px;
     }
-
-    .treatment-heading {
-        position: relative;
-        width: 100%;
-        left: 0;
-        height: fit-content;
+    .treatment-section {
+        flex-direction: row;
     }
-
     .treatment-image {
-        position: relative;
-        width: 100%;
-        left: 0;
+        max-width: 50%;
     }
 }
 
@@ -589,207 +589,85 @@ header h1 {
 
 /* ------------- Contact us page ---------------*/
 
-.contact-container h2, h3 {
-	text-align: center;
-	color: #212A31;
-	font-size: 1rem;
+/* Style form in book-now.html */
+#book-now-image {
+    height: 100%;
+    background: url("assets/images/therapy-image.jpg") center center / cover no-repeat;
 }
 
-.contact-container h1 {
-	margin-bottom: 4%;
-	font-size: 2.5rem;
-	text-align: center;
-	margin-top: 20%;
+#form-section {
+    float: left;
+    width: 33%;
+    text-align: left;
+    background-color: #396464;
+    flex-grow: 1;
 }
 
-.contact-container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
-	background-color: #3964641c;
-	border-radius: 8px;
-    box-shadow: 0 2px 8px #00372A;
+#form-section h2 {
+    text-align: center;
 }
 
-.contact-content {
-	display: flex;
-	flex-direction: column;
+#form-section form {
+    padding: 0 15%;
 }
 
-.form-section,
-.address-section {
-	width: 100%;
-	margin-bottom: 20px;
+.form-input {
+    display: block;
+    border: 1px solid #f0f0f0;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-form {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px #00372A;
-	margin-bottom: 20px;
+#choose-treatment {
+    margin-bottom: 15px;
 }
 
-form label {
-	display: block;
-	margin-bottom: 5px;
-	font-weight: bold;
+/* Style find us section */
+
+#find-us-section {
+    float: right;
+    width: 66%;
+    flex-grow: 1;
 }
 
-form input,
-form textarea {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 15px;
-	border: 1px solid #3a3a3a;
-	border-radius: 4px;
-	box-sizing: border-box;
+#find-us-section h2 {
+    text-align: center;
 }
 
-form button {
-	width: 100%;
-	padding: 10px;
-	background-color: #3EB9BB;
-	color: #fff;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	font-size: 16px;
+/* Style map */
+
+#map {
+    text-align: center;
 }
 
-form button:hover {
-	background-color: #3EB9BB;
-}
-
-.address-section {
-	text-align: center;
-}
-
-.address-section p {
-	font-size: 17px;
-	margin-bottom: 10px;
+#map iframe{
+    width: 80%;
+    height: 450px;
 }
 
 /* Small phone screens*/
 @media (min-width: 320px) and (max-width: 575px) {
-.contact-container h1 {
-	font-size: 1.5rem;
-}
-form input, form textarea {
-	font-size: 14px;
-	padding: 12px;
-}
-
-form button {
-	font-size: 14px;
-	padding: 12px;
-}
+.
 }
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 767px) {
-.contact-container h1 {
-        font-size: 1.75rem;
-}
 
-form input, form textarea {
-        font-size: 15px;
-        padding: 14px;
-}
 
-form button {
-        font-size: 15px;
-        padding: 14px;
-}
 }
 
 /*iPads & laptops*/
 @media (min-width: 768px) and (max-width: 991px) {
-.contact-container h1 {
-    font-size: 2rem;
- }
 
-form input, form textarea {
-    font-size: 16px;
-     padding: 16px;
-}
-
-form button {
-    font-size: 19px;
-    padding: 16px;
-}
-
-form label {
-	display: block;
-	margin-bottom: 5px;
-	font-weight: bold;
-	font-size: 1.2rem;
-}
-.contact-container h2, h3 {
-	font-size: 1.7rem;
-}
-.address-section p {
-	font-size: 19px;
-	margin-bottom: 10px;
-}
 }
 
 /* Laptop screens*/
 @media (min-width: 992px) {
-.contact-container h1 {
-    font-size: 2.25rem;
-}
 
-form input, form textarea {
-    font-size: 17px;
-    padding: 18px;
-}
 
-form button {
-    font-size: 17px;
-    padding: 18px;
-}
-form label {
-	display: block;
-	margin-bottom: 5px;
-	font-weight: bold;
-	font-size: 1.6rem;
-}
-.contact-container h2, h3 {
-	font-size: 1.9rem;
-}
-.address-section p {
-	font-size: 23px;
-	margin-bottom: 10px;
-}
+
 }
 
 /* Large laptop screens media queries */
 @media (min-width: 1200px) {
-.contact-container h1 {
-    font-size: 2.5rem;
-}
 
-form input, form textarea {
-    font-size: 20px;
-    padding: 20px;
-}
-
-form button {
-    font-size: 20px;
-    padding: 20px;
-}
-form label {
-	display: block;
-	margin-bottom: 5px;
-	font-weight: bold;
-	font-size: 1.5rem;
-}
-.contact-container h2, h3 {
-	font-size: 2rem;
-}
-.address-section p {
-	font-size: 25px;
-	margin-bottom: 10px;
-}
 }

@@ -39,46 +39,80 @@
 </head>
 <body>
 
-    <div class="contact-container">
-        <h1>Contact Us</h1>
-        
-        
-        <div class="contact-content">
-            <div class="form-section">
-                <form class="contact-form" action="https://formdump.codeinstitute.net" method="POST">
-                    <h3>We look forward to hearing from you</h3>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
-
-                <form class="newsletter-form" action="https://formdump.codeinstitute.net" method="POST">
-                    <h3>Newsletter Sign Up</h3>
-                    <label for="newsletter-email">Email:</label>
-                    <input type="email" id="newsletter-email" name="newsletter-email" required>
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
-
-            <div class="address-section">
-                <h3>Our Company Headquarters</h3>
-                <p>1179 Addison Street<br>Suite 200<br>Chicago, IL 60611<br>Email: info@NeuroxCel.institute.com<br>Phone: (312) 265-0919</p>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.96305771561955!3d-37.816279742647756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1633456791596!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
+      <!-- Book Now image -->
+      <div class="banner-image">
+        <div id="book-now-image"></div>
     </div>
+
+    <div class="section-wrapper">
+        <!-- Book Now form section -->
+        <section id="form-section">
+            <form action="https://formdump.codeinstitute.net" method="POST">
+                <h2>Book Now</h2>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input class="form-input" id="fname" type="text" name="first_name" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input class="form-input" id="lname" type="text" name="last_name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input class="form-input" id="email" type="email" name="email_address" required>
+                </div>
+                <div id="choose-treatment">
+                    <p>Choose your treatment or therapy:</p>
+                    <div>
+                        <input id="microbiology" type="radio" name="treatment" value="microbiology" required>
+                        <label for="microbiology">Microbiology</label>
+                    </div>
+                    <div>
+                        <input id="Biohacking" type="radio" name="treatment" value="fBiohacking">
+                        <label for="Biohacking">Biohacking</label>
+                    </div>
+                    <div>
+                        <input id="nutrigenomics" type="radio" name="treatment" value="nutrigenomics">
+                        <label for="nutrigenomics">Nutrigenomics</label>
+                    </div>
+                    <div>
+                        <input id="immersion" type="radio" name="treatment" value="immersion">
+                        <label for="immersion">Immersion</label>
+                    </div>
+                    <div>
+                        <input id="nootropics" type="radio" name="treatment" value="nootropics">
+                        <label for="nootropics">Nootropics</label>
+                    </div>
+                    <div>
+                        <input id="nutrigenomics" type="radio" name="treatment" value="nutrigenomics">
+                        <label for="nutrigenomics">Immersion</label>
+                    </div>
+                    <div>
+                        <input id="nutrigenomics" type="radio" name="treatment" value="nutrigenomics">
+                        <label for="nutrigenomics">Immersion</label>
+                    </div> 
+                </div>
+                <div>
+                    <input id="auto-immune disease relief" type="radio" name="treatment" value="uto-immune disease relief">
+                    <label for="anuto-immune disease relief">Auto-immune disease relief</label>
+                </div> 
+                <div>
+                    <label class="form-label" for="date">Date</label>
+                    <input class="form-input" id="date" type="date" name="booking-date" required>
+                </div>
+                <input class="book-button" type="submit" value="Book">
+            </form>
+        </section>
+
+        <!-- Find us section -->
+        <section id="find-us-section">
+            <h2>Find Us</h2>
+            <div id="map">
+                <iframe src="https://bit.ly/3Am9tY2" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+</div>
 
       <!-- Footer social media icons with white color bar -->
       <footer class="footer">
