@@ -5,7 +5,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	border: none;
 }
 
 /*  General styles */
@@ -56,7 +56,7 @@ html {
 
 /* Cover Section */
 .cover-container {
-	background-image: url('assets/images/pexels298905.jpg');
+	background-image: url('assets/images/coverimage1280.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -74,7 +74,7 @@ html {
 
 /* Tinted overlay on image for readability */
 .overlay {
-	background-color: #121e1274;
+	background-color: #121e1285;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -289,11 +289,11 @@ footer {
 }
 
 .maincontent h1 {
-	font-size: 3.5rem;
+	font-size: 3.2rem;
 }
 
 .maincontent h2 {
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 }
 
 .cover-container {
@@ -367,11 +367,11 @@ footer {
 }
 
 .maincontent h1 {
-	font-size: 5.2rem;
+	font-size: 5.6rem;
 }
 
 .maincontent h2 {
-	font-size: 2.1rem;
+	font-size: 2.3rem;
 }
 
 .cover-container {
@@ -388,7 +388,10 @@ footer {
 }
 }
 
-/* ----------- Products & services page --------------- */
+/* ----------- Therapies & Treatments page --------------- */
+
+/* Style so content to fill screensize & footer to stick to bottom */
+
 header {
     text-align: center;
     padding: 20px;
@@ -399,80 +402,87 @@ header {
 header h1 {
     position: sticky;
     top: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: white;
     z-index: 1;
     padding: 20px 0;
     margin: 0;
     text-align: center;
-	margin-top: 8vh;
+	margin-top: 10vh;
 }
 
-/* Main Container */
-.pscontainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 10px 20px;
-	width: 100%;
+#products-wrapper {
+    min-height: calc(100vh - 200px);
 }
 
-/* Products Section */
-.products-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	gap: 20px;
+.treatment-section {
+    position: relative;
+    height: 450px;
 }
 
-.products-section {
-    display: flex;
-    flex-wrap: wrap; /* Enables wrapping for smaller screens */
-    gap: 20px;
-	flex-direction: column;
-	flex: 1;
+.treatment-heading h2 {
+    position: absolute;
+    display: inline-block;
+    height: 450px;
 }
 
-.columns {
-    padding: 19px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    width: 100%;
-	line-height: 1.6; 
-	flex: 1 1 48%; /* Two columns, each taking about half the width */
-	flex: 1; /* Order for columns to appear first */
+.treatment-section p {
+    padding: 0 10%;
+    line-height: 20px;
+    text-align: justify;
 }
 
-.columns h2 {
-    font-size: 2.2rem;
-    margin: 10px 0;
+.book-button {
+    display: block;
+    width: max-content;
+    font-size: 120%;
+    margin: 30px auto;
+    padding: 10px;
+    text-decoration: none;
+    color: #e2ecba;
+    background-color: #454720;
 }
 
-.columns p {
-    font-size: 1.7rem;
-    margin-bottom: 16px;
-    word-wrap: break-word;
-	line-height: 35px
+.book-button:hover {
+    background-color: #784834;
+}
+.treatment-image {
+    position: absolute;
+    height: 450px;
 }
 
-/* Image Section */
-.products-image {
-    display: flex;
-    padding: 20px;
-	width: 100%;
-	justify-content: center;
-	flex: 3; /* Places image at the bottom */
+.right-treatment-heading {
+    left: 66%;
+    width: 33%;
 }
 
-.products-image img {
-	width: 100%;
-    height: auto;
-	max-height: 80vh;
-	object-fit: contain;
+.left-treatment-image {
+    width: 66%;
 }
+
+.left-treatment-heading {
+    left: 0;
+    width: 33%;
+}
+
+.right-treatment-image {
+    left: 33%;
+    width: 66%;
+}
+
+#wellness-image {
+    background: url(assets/images/wellness-image.jpg) center center / cover no-repeat;
+}
+
+#health-image {
+    background: url(assets/images/health-image.jpg) center center / cover no-repeat;
+}
+
+#fitness-image {
+    background: url(assets/images/fitness-image.jpg) center center / cover no-repeat;
+}
+
+
 
 /* Footer */
 .footer {
@@ -503,172 +513,79 @@ header h1 {
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 575px) {
 
-.products-wrapper {
-    flex-direction: column;
-	display: flex;
-	gap:20px;
-}
+	.banner-image {
+		height: 300px;
+	}
 
-.products-section {
-    display: flex;
-    gap: 20px;
-	margin-bottom: 20px; 
-	flex-direction: row;
-	flex-wrap: wrap;
-}
+	.treatment-image {
+		height: 300px;
+	}
 
-.columns {
-    flex: 1 1 40%; /* Two columns, each taking about half the width */
-	box-sizing: border-box;
-	flex: 1; 
-}
-.columns h2 {
-    font-size: 1.8rem;
-}
+	#map iframe{
+		height: 300px;
+	}
 
-.columns p {
-    font-size: 1.7rem;
-}
-
-/* Ensure image occupies full width */
-.products-image {
-	flex-basis: 100%; 
-	flex: 3; /* Places image below text */
-}
-
-.products-image img {
-	width: 100%; 
-	height: auto;
-	max-height: 50vh;  
-}
 }
 
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 768px) {
-.products-wrapper {
-	flex-direction: column;
-	display: flex;
-}
+	.banner-image {
+		height: 300px;
+	}
 
-.products-section {
-    display: flex;
-    flex-wrap: wrap;
-	gap: 20px;
-	margin-bottom: 20px; 
-	flex-direction: row;
-}
+	.treatment-image {
+		height: 300px;
+	}
 
-.products-image {
-	flex-basis: 100%;
-	flex: 3; 
-}
-
-/* Ensure image occupies full width */
-.products-image img {
-    width: 100%;
-    max-height: 60vh;
- }
-
-.products-image {
-	order: 3; 
-}
-
-.columns {
-    flex: 1 1 43%;  /* Two columns */
-}
-.columns h2 {
-    font-size: 2rem;
-}
-
-.columns p {
-    font-size: 1.5rem;
-}
+	#map iframe{
+		height: 300px;
+	}
 }
 
 /* Screens for ipads and small laptops*/
 @media (min-width: 768px) {
-.products-wrapper {
-    flex-direction: column;
-    gap: 20px;
-}
+	.banner-image {
+		height: 300px;
+	}
 
-.products-section {
-    flex: 1;
-	display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-}
+	.treatment-image {
+		height: 300px;
+	}
 
-.products-image {
-    max-width: 100%; /* Image takes up half the width */
-    padding-left: 20px;
-	flex: 3;
-	padding-top: 20px;
-	height: 230vh;
-
-}
-
-.products-image img {
-    width: 100%;
-	height: contain;
-}
-
-.columns {
-	flex: 1 1 48%;
-}
+	#map iframe{
+		height: 300px;
+	}
 }
 
 
 /* Large screens: 992px and up - Switch to two-column layout */
 @media (min-width: 992px) {
-.products-wrapper {
-    flex-direction: row;
-    gap: 20px;
-}
 
-.columns h2 {
-    font-size: 2.5rem;
-}
-
-.columns p {
-    font-size: 1.9rem;
-}
-
-.products-image img {
-	width: 100%;
-	max-height: 180vh;
-}
+ 
 }
 
 /* Extra-large screens: 1200px and up */
 @media (min-width: 1200px) {
+	.treatment-section {
+        position: relative;
+        display: inline;
+    }
 
-.products-wrapper {
-    flex-direction: row;
-    gap: 20px;
-}
+    .treatment-heading {
+        position: relative;
+        width: 100%;
+        left: 0;
+        height: fit-content;
+    }
 
-.pscontainer h1 {
-	font-size: 2.5em;
-}
-
-.products-section {
-    gap: 40px;
-}
-
-.columns h2 {
-    font-size: 2.5rem;
-}
-
-.columns p {
-    font-size: 2.2rem;
-	line-height: 50px;
+    .treatment-image {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
 }
 
-.products-image img {
-     max-height: 500vh;	
-}
-}
+
 
 /* ------------- Contact us page ---------------*/
 
