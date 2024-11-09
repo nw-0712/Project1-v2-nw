@@ -22,7 +22,7 @@ html {
 	padding: 17px 22px;
 	position: fixed;
 	width: 100%;
-	height: 10%;
+	height: 70px;
 	top: 0;
 	z-index: 10;
 	display: flex;
@@ -587,67 +587,107 @@ header h1 {
 
 
 
-/* ------------- Contact us page ---------------*/
+/* ------------- Booking contact page page ---------------*/
 
-/* Style form in book-now.html */
-#book-now-image {
-    height: 100%;
-    background: url("assets/images/therapy-image.jpg") center center / cover no-repeat;
-}
-
-#form-section {
-    float: left;
-    width: 33%;
-    text-align: left;
-    background-color: #396464;
-    flex-grow: 1;
-}
-
-#form-section h2 {
-    text-align: center;
-}
-
-#form-section form {
-    padding: 0 15%;
-}
-
-.form-input {
-    display: block;
-    border: 1px solid #f0f0f0;
+/* Ensure the banner image stays below the navbar */
+.banner-image {
+    position: fixed;
+    top: 70px; /* Positioned below the navbar */
+    left: 0;
     width: 100%;
-    margin-bottom: 15px;
+    height: 200px; 
+    z-index: 5; /* Lower than the navbar */
+	margin-top: 10%;
 }
 
-#choose-treatment {
-    margin-bottom: 15px;
+#book-now-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+    background-position: center;
+	background-image: url('assets/images/therapy-image.jpg'); 
+	z-index: 5;
 }
 
-/* Style find us section */
+
+/* Section wrapper style */
+.section-wrapper {
+    margin-top: 270px; /* To make space for the fixed navbar and banner image */
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    padding: 0 20px;
+    z-index: 10; /* To ensure content is above banner */
+}
+
+/* For larger screens, stack form and map side by side */
+@media (min-width: 768px) {
+    .section-wrapper {
+        flex-direction: row; /* Side by side on larger screens */
+        gap: 20px; /* Space between form and map */
+    }
+
+    #form-section, #find-us-section {
+        flex: 1;
+        padding: 10px;
+    }
+
+    #form-section {
+        margin-right: 20px;
+    }
+}
+
+/* Form and map section styling */
+#form-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%; 
+    z-index: 15; 
+}
 
 #find-us-section {
-    float: right;
-    width: 66%;
-    flex-grow: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-#find-us-section h2 {
-    text-align: center;
+#map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
 }
 
-/* Style map */
-
-#map {
-    text-align: center;
+/* Form styling */
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	box-sizing: border-box; 
 }
 
-#map iframe{
-    width: 80%;
-    height: 450px;
+.book-button {
+    background-color: #3EB9BB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: #0056b3;
 }
 
 /* Small phone screens*/
 @media (min-width: 320px) and (max-width: 575px) {
-.
+
 }
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 767px) {
