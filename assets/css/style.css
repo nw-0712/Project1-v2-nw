@@ -56,7 +56,7 @@ html {
 
 /* Cover Section */
 .cover-container {
-	background-image: url('assets/images/coverimage1280.jpg');
+	background-image: url('assets/images/cover-image.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -65,7 +65,6 @@ html {
 	/* Ensure background scales with screen */
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 80px;
 }
 
 .cover-container img {
@@ -74,7 +73,7 @@ html {
 
 /* Tinted overlay on image for readability */
 .overlay {
-	background-color: #121e1285;
+	background-color: #121e1206;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -173,6 +172,8 @@ html {
 	z-index: 99;
 	letter-spacing: 40px;
 }
+
+/* ---------------Media Queries------------- */
 
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 576px) {
@@ -390,12 +391,18 @@ footer {
 
 /* ---------------- Therapies & Treatments page ----------------- */
 
+/* General Wrapper Styling */
+.products-wrapper {
+    width: 100%; /* Full-width container */
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 header {
     text-align: center;
     padding: 20px;
     font-size: 2rem;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 header h1 {
@@ -410,32 +417,15 @@ header h1 {
 	margin-top: 10vh;
 }
 
-/* General Styling */
-.products-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    background-color: white;
-    font-size: 2rem;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    margin-top: 10vh;
-}
-
 /* Treatment Section Layout */
 .treatment-section {
     display: flex;
 	flex-direction: column; /* Stacked layout by default */
     margin-bottom: 40px;
-    align-items: stretch; /* Ensures content and image have the same height */
+    align-items: stretch; /* To get content and image to have the same height */
     gap: 20px;
+	width: 100%;
+    align-items: stretch;
 }
 
 .treatment-content {
@@ -459,11 +449,11 @@ header h1 {
 /* Image Styling */
 .treatment-image {
     flex: 1;
-    height: 100%; /* Matches height of text content */
+	width: 100%;
+    height: auto; /* Matches height of text content */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    max-width: 100%;
+	background-position: center;
     background-size: cover; /* Ensures background covers the entire div */
-    background-position: center;
 }
 
 /* Book Button Styling */
@@ -481,19 +471,22 @@ header h1 {
 }
 
 .book-button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
+    background-color: #0e2741; /* Darker shade for hover effect */
 }
 
 /* Image Placement Variations */
-.left-image .treatment-image {
+.treatment-section .left-image {
     order: 1;
+	height: cover;
 }
-.left-image .treatment-content {
+.treatment-section .right-image {
     order: 2;
+	height: cover;
 }
 
-.right-image .treatment-content {
+.treatment-section .left-image {
     order: 1;
+	height: cover;
 }
 
 
@@ -523,8 +516,7 @@ header h1 {
     letter-spacing: 40px;
 }
 
-
-/* -------------------Media Queries---------------------------- */
+/* ---------------Media Queries------------- */
 
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 575px) {
@@ -535,6 +527,18 @@ header h1 {
     .treatment-image,
     .treatment-content {
         max-width: 100%;
+    }
+	.treatment-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .treatment-content p {
+        font-size: 1.25rem;
+    }
+
+    .book-button {
+        font-size: 1.1rem;
+        padding: 12px 22px;
     }
 }
 
@@ -547,15 +551,46 @@ header h1 {
     .treatment-content {
         max-width: 100%;
     }
+	.treatment-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .treatment-content p {
+        font-size: 1.3rem;
+    }
+
+    .book-button {
+        font-size: 1.2rem;
+        padding: 14px 24px;
+    }
 }
 
 /* Screens for ipads and small laptops*/
 @media (min-width: 768px) {
 	.treatment-section {
         flex-direction: row;
+		width: 100%;
     }
-    .treatment-image, .treatment-content {
-        max-width: 50%;
+
+	.treatment-content,
+    .treatment-image {
+        width: 50%; /* Split width equally */
+    }
+	.treatment-image {
+        height: 100%;
+        object-fit: cover;
+    }
+	.treatment-content h2 {
+        font-size: 2rem;
+    }
+
+    .treatment-content p {
+        font-size: 1.4rem;
+    }
+
+    .book-button {
+        font-size: 1.3rem;
+        padding: 16px 26px;
     }	
 }
 
@@ -563,25 +598,51 @@ header h1 {
 /* Large screens: 992px and up - Switch to two-column layout */
 @media (min-width: 992px) {
 	.treatment-section {
-        flex-direction: column;
+        flex-direction: row;
     }
     .treatment-image,
     .treatment-content {
         max-width: 100%;
     }
- 
+	.treatment-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .treatment-content p {
+        font-size: 1.5rem;
+    }
+
+    .book-button {
+        font-size: 1.4rem;
+        padding: 18px 28px;
+    }
 }
 
 /* Extra-large screens: 1200px and up */
 @media (min-width: 1200px) {
 	.products-wrapper {
-        max-width: 1200px;
+        width: 100%; /* Full width of viewport */
+        max-width: 100%; /* Removes max-width constraint */
     }
+
     .treatment-section {
+        gap: 40px;
+        width: 100%;
+    }
+	.treatment-section {
         flex-direction: row;
     }
-    .treatment-image {
-        max-width: 50%;
+	.treatment-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .treatment-content p {
+        font-size: 1.8rem;
+    }
+
+    .book-button {
+        font-size: 1.5rem;
+        padding: 20px 30px;
     }
 }
 
