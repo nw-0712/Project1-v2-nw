@@ -11,9 +11,10 @@
 /*  General styles */
 body,
 html {
-	height: 100%;
+	margin: 0;
+    padding: 0;
 	font-family: Lato, sans-serif;
-	height: 100%;
+	min-height: 100vh; /* Ensure the body covers the entire viewport height */
 }
 
 /* Navigation Bar */
@@ -450,7 +451,7 @@ header h1 {
 .treatment-image {
     flex: 1;
 	width: 100%;
-    height: auto; /* Matches height of text content */
+    height: 100%; /* Matches height of text content */
     object-fit: cover; /* Ensures the image covers the area without distortion */
 	background-position: center;
     background-size: cover; /* Ensures background covers the entire div */
@@ -460,7 +461,7 @@ header h1 {
 .book-button {
     display: inline-block;
     margin: 20px auto 0; /* Centers button horizontally */
-    padding: 10px 20px;
+    padding: 10px 24px;
     background-color: #3EB9BB; 
     color: #fff;
     text-align: center;
@@ -468,6 +469,7 @@ header h1 {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+	font-size: 1.2rem;
 }
 
 .book-button:hover {
@@ -478,15 +480,19 @@ header h1 {
 .treatment-section .left-image {
     order: 1;
 	height: cover;
+	width: auto;
 }
 .treatment-section .right-image {
     order: 2;
 	height: cover;
+	width: auto;
+
 }
 
 .treatment-section .left-image {
     order: 1;
 	height: cover;
+		width: 100%;
 }
 
 
@@ -544,12 +550,18 @@ header h1 {
 
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 768px) {
+	.products-wrapper {
+        width: 100%; /* Full width of viewport */
+        max-width: 100%; /* Removes max-width constraint */
+    }
+
 	.treatment-section {
         flex-direction: column;
     }
     .treatment-image,
     .treatment-content {
-        max-width: 100%;
+        width: 100%;
+		height: 100%;
     }
 	.treatment-content h2 {
         font-size: 1.8rem;
@@ -559,14 +571,19 @@ header h1 {
         font-size: 1.3rem;
     }
 
-    .book-button {
-        font-size: 1.2rem;
-        padding: 14px 24px;
+	.book-button {
+        font-size: 1.4rem;
+        padding: 16px 32px;
     }
 }
 
 /* Screens for ipads and small laptops*/
 @media (min-width: 768px) {
+	.products-wrapper {
+        width: 100%; /* Full width of viewport */
+        max-width: 100%; /* Removes max-width constraint */
+    }
+
 	.treatment-section {
         flex-direction: row;
 		width: 100%;
@@ -575,13 +592,14 @@ header h1 {
 	.treatment-content,
     .treatment-image {
         width: 50%; /* Split width equally */
+		height: 100%;
     }
 	.treatment-image {
         height: 100%;
         object-fit: cover;
     }
 	.treatment-content h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .treatment-content p {
@@ -589,23 +607,25 @@ header h1 {
     }
 
     .book-button {
-        font-size: 1.3rem;
-        padding: 16px 26px;
-    }	
+        font-size: 1.6rem;
+        padding: 18px 36px;
+    }
 }
 
 
 /* Large screens: 992px and up - Switch to two-column layout */
 @media (min-width: 992px) {
-	.treatment-section {
-        flex-direction: row;
+	.products-wrapper {
+        width: 100%; /* Full width of viewport */
+        max-width: 100%; /* Removes max-width constraint */
     }
-    .treatment-image,
-    .treatment-content {
-        max-width: 100%;
+
+    .treatment-section {
+        gap: 40px;
+        width: 100%;
     }
 	.treatment-content h2 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
 
     .treatment-content p {
@@ -613,8 +633,8 @@ header h1 {
     }
 
     .book-button {
-        font-size: 1.4rem;
-        padding: 18px 28px;
+        font-size: 1.8rem;
+        padding: 20px 40px;
     }
 }
 
@@ -633,16 +653,16 @@ header h1 {
         flex-direction: row;
     }
 	.treatment-content h2 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .treatment-content p {
         font-size: 1.8rem;
     }
 
-    .book-button {
-        font-size: 1.5rem;
-        padding: 20px 30px;
+	.book-button {
+        font-size: 2rem;
+        padding: 24px 48px;
     }
 }
 
@@ -650,39 +670,107 @@ header h1 {
 
 /* ------------- Booking contact page page ---------------*/
 
-/* Ensure the banner image stays below the navbar */
-.banner-image {
-    position: fixed;
-    top: 70px; /* Positioned below the navbar */
-    left: 0;
+#book-image {
     width: 100%;
     height: 200px; 
-    z-index: 5; /* Lower than the navbar */
-	margin-top: 10%;
+    margin-top: 100px; 
 }
 
-#book-now-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+.book-now-image {
     width: 100%;
-    height: 100%; 
-    background-size: cover;
+    height: 100%;
+    background-image: url('assets/images/therapy-image.jpg'); 
     background-position: center;
-	background-image: url('assets/images/therapy-image.jpg'); 
-	z-index: 5;
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
-
 
 /* Section wrapper style */
 .section-wrapper {
-    margin-top: 270px; /* To make space for the fixed navbar and banner image */
+	margin-top: 20px;
     display: flex;
     flex-direction: column; 
     gap: 20px;
     padding: 0 20px;
-    z-index: 10; /* To ensure content is above banner */
 }
+
+
+/* Form and map section styling */
+#form-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%; 
+    z-index: 15;
+	margin-bottom: 20px;
+	border: #0e2741; 
+}
+
+/* Map section styling */
+#find-us-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+#map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Form styling */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 15px; 
+}
+
+.book-button {
+    background-color: #3EB9BB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 30%;
+    margin-bottom: 15px;
+}
+
+.book-button {
+    background-color: #3EB9BB;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: #0056b3;
+}
+
+/* To ensure footer sticks to the bottom if there's not enough content */
+footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/*-------------Media Quueries --------------*/
+
+/* Small phone screens*/
+@media (min-width: 320px) and (max-width: 575px) {
+
+}
+/* Larger phone screens*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+}
+
 
 /* For larger screens, stack form and map side by side */
 @media (min-width: 768px) {
@@ -700,67 +788,6 @@ header h1 {
         margin-right: 20px;
     }
 }
-
-/* Form and map section styling */
-#form-section {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-sizing: border-box;
-    width: 100%; 
-    z-index: 15; 
-}
-
-#find-us-section {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-#map iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-}
-
-/* Form styling */
-.form-input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-	box-sizing: border-box; 
-}
-
-.book-button {
-    background-color: #3EB9BB;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.book-button:hover {
-    background-color: #0056b3;
-}
-
-/* Small phone screens*/
-@media (min-width: 320px) and (max-width: 575px) {
-
-}
-/* Larger phone screens*/
-@media (min-width: 576px) and (max-width: 767px) {
-
-
-}
-
-/*iPads & laptops*/
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
 /* Laptop screens*/
 @media (min-width: 992px) {
 
