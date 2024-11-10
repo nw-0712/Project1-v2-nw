@@ -55,7 +55,37 @@
                 <label for="email">Email Address</label>
                 <input class="form-input" id="email" type="email" name="email_address" required>
             </div>
-            <!-- More form fields... -->
+            <div id="choose-treatment">
+                <p>Choose your treatment or therapy:</p>
+                <div>
+                    <input id="microbiology" type="radio" name="treatment" value="microbiology" required>
+                    <label for="microbiology">Microbiology</label>
+                </div>
+                <div>
+                    <input id="Biohacking" type="radio" name="treatment" value="fBiohacking">
+                    <label for="Biohacking">Biohacking</label>
+                </div>
+                <div>
+                    <input id="nutrigenomics" type="radio" name="treatment" value="nutrigenomics">
+                    <label for="nutrigenomics">Nutrigenomics</label>
+                </div>
+                <div>
+                    <input id="immersion" type="radio" name="treatment" value="immersion">
+                    <label for="immersion">Immersion</label>
+                </div>
+                <div>
+                    <input id="nootropics" type="radio" name="treatment" value="nootropics">
+                    <label for="nootropics">Nootropics</label>
+                </div>
+                <div>
+                    <input id="auto-immune-disease-relief" type="radio" name="treatment" value="auto-immune-disease-relief">
+                    <label for="auto-immune-disease-relief">Auto-immune disease relief</label>
+                </div> 
+            </div>
+            <div>
+                <label class="form-label" for="date">Date</label>
+                <input class="form-input" id="date" type="date" name="booking-date" required>
+            </div>
             <input class="book-button" type="submit" value="Book">
         </form>
     </section>
