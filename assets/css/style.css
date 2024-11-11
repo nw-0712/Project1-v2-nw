@@ -14,7 +14,7 @@ html {
 	margin: 0;
     padding: 0;
 	font-family: Lato, sans-serif;
-	min-height: 100vh; /* Ensure the body covers the entire viewport height */
+	height: 100vh; /* Ensure the body covers the entire viewport height */
 }
 
 /* Navigation Bar */
@@ -22,7 +22,7 @@ html {
 	background-color: #1F8BA5;
 	padding: 17px 22px;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 70px;
 	top: 0;
 	z-index: 10;
@@ -40,13 +40,15 @@ html {
 
 .nav-menu li {
 	margin-left: 20px;
+    align-items: center;
 }
 
 .nav-menu li a {
 	color: #f0f0f0;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	text-decoration: none;
 	letter-spacing: 2px;
+    align-items: center;
 }
 
 .nav-menu li a:hover {
@@ -61,7 +63,7 @@ html {
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background-attachment: fixed;
 	/* Ensure background scales with screen */
 	position: relative;
@@ -78,7 +80,7 @@ html {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -118,6 +120,7 @@ html {
 	margin-bottom: 5px;
 	color: #fff;
 	text-align: center;
+    font-family: Libre, sans-serif;
 }
 
 .maincontent h2 {
@@ -132,9 +135,9 @@ html {
 .cta-button {
 	background-color: #1F8BA5;
 	color: #fff;
-	padding: 17px 30px;
+	padding: 15px 28px;
 	text-decoration: none;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	border-radius: 5px;
 	align-items: center;
 	margin-top: 20px;
@@ -246,6 +249,9 @@ html {
 /* Large phone screens media queries */
 @media (min-width: 576px) and (max-width: 767px) {
 
+.nav-menu li {
+    font-size: 1.3rem;
+}
 .maincontent {
 	padding: 20px;
 	margin-top: 30vh;
@@ -274,13 +280,16 @@ footer {
 }
 
 #social-networks i {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 }
 }
 
 /* Tablet screens media queries */
 @media (min-width: 768px) and (max-width: 991px) {
 
+.nav-menu li {
+    font-size: 1.5rem;
+}
 .maincontent {
 	padding: 20px;
 	margin-top: 40vh;
@@ -318,6 +327,7 @@ footer {
 
 .nav-menu li {
 	margin-left: 40px;
+    font-size: 1.5rem;
 }
 
 .maincontent {
@@ -334,7 +344,7 @@ footer {
 }
 
 .maincontent h2 {
-	font-size: 2rem;
+	font-size: 2.1rem;
 }
 
 .cover-container img {
@@ -357,6 +367,7 @@ footer {
 
 .nav-menu li {
 	margin-left: 50px;
+    font-size: 1.8rem;
 }
 
 .maincontent {
@@ -369,11 +380,11 @@ footer {
 }
 
 .maincontent h1 {
-	font-size: 5.6rem;
+	font-size: 5.1rem;
 }
 
 .maincontent h2 {
-	font-size: 2.3rem;
+	font-size: 2.1rem;
 }
 
 .cover-container {
@@ -416,6 +427,7 @@ header h1 {
     margin: 0;
     text-align: center;
 	margin-top: 10vh;
+    font-family: Libre, sans-serif;
 }
 
 /* Treatment Section Layout */
@@ -435,7 +447,7 @@ header h1 {
     flex-direction: column;
     padding: 20px;
     gap: 15px;
-    background-color: #f0f4f8; 
+    background-color: #0a202e09; 
     box-sizing: border-box;
     justify-content: center;
 }
@@ -516,7 +528,7 @@ header h1 {
 }
 
 #social-networks i {
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 10px;
     color: #f0f0f0;
     letter-spacing: 40px;
@@ -673,16 +685,18 @@ header h1 {
 #book-image {
     width: 100%;
     height: 200px; 
-    margin-top: 100px; 
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center; 
 }
 
 .book-now-image {
     width: 100%;
     height: 100%;
-    background-image: url('assets/images/therapy-image.jpg'); 
+    background-image: url('assets/images/therapy-image.jpeg'); 
     background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 /* Section wrapper style */
@@ -697,28 +711,39 @@ header h1 {
 
 /* Form and map section styling */
 #form-section {
-    background-color: #f4f4f4;
+    background-color: #0a202e09;
     padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
     width: 100%; 
     z-index: 15;
 	margin-bottom: 20px;
-	border: #0e2741; 
+	border: #0a202e09; 
+}
+
+#form-section h2 {
+    font-family: Libre, sans-serif;
+    text-align: center;
+    font-size: 2rem;
 }
 
 /* Map section styling */
 #find-us-section {
-    background-color: #f4f4f4;
+    background-color: #0a202e09;
     padding: 20px;
     border-radius: 8px;
 	margin-bottom: 20px;
 }
 
+#find-us-section h2 {
+margin-top: 20px;
+}
+
 #map iframe {
     width: 100%;
-    height: 400px;
+    height: 420px;
     border: none;
+    margin-top: 20px;
 }
 
 /* Form styling */
@@ -735,12 +760,12 @@ header h1 {
 .book-button {
     background-color: #3EB9BB;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 0px;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
 	width: 30%;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .book-button {
@@ -768,7 +793,11 @@ footer {
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 767px) {
 
-
+#map iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+}
 }
 
 
