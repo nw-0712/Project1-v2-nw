@@ -45,7 +45,7 @@ html {
 
 .nav-menu li a {
 	color: #f0f0f0;
-	font-size: 1.1rem;
+	font-size: 1.25rem;
 	text-decoration: none;
 	letter-spacing: 2px;
     align-items: center;
@@ -57,7 +57,7 @@ html {
 
 /* ----------- Home page - all components ------------*/
 
-/* Cover Section */
+/* Main Cover Section */
 .cover-container {
 	background-image: url('assets/images/cover-image.jpg');
 	background-size: cover;
@@ -92,11 +92,11 @@ html {
 	color: #fff;
 	z-index: 99;
 	align-items: center;
-	margin-top: 40vh;
+	margin-top: 30vh;
 	padding: 20px;
 	margin: 0;
 }
-
+/* Logo graphic*/
 .logo-centered {
 	margin-bottom: 20px;
 	align-items: center;
@@ -105,11 +105,11 @@ html {
 /* Image Styling to Maintain Proportions */
 .maincontent img {
 	max-width: 10%;
-	/* Constrain width within container */
+/* Constrain width within container */
 	height: auto;
-	/* To maintain aspect ratio */
+/* To maintain aspect ratio */
 	width: 67px;
-	/* Default width */
+/* Default width */
 	z-index: 99;
 }
 
@@ -125,13 +125,13 @@ html {
 
 .maincontent h2 {
 	font-size: 1.8rem;
-	/* Increased font size */
+/* Increased font size */
 	margin-bottom: 10px;
 	color: #fff;
 	letter-spacing: 8px;
 }
 
-/* Discover CTA button */
+/* Discover - CTA button styling*/
 .cta-button {
 	background-color: #1F8BA5;
 	color: #fff;
@@ -149,7 +149,7 @@ html {
 	align-items: center;
 }
 
-/* Footer */
+/* Footer styling*/
 .footer {
 	background-color: #1F8BA5;
 	color: white;
@@ -161,6 +161,7 @@ html {
 	bottom: 0;
 }
 
+/* Footer social media icons style*/
 #social-networks {
 	display: flex;
 	justify-content: center;
@@ -177,9 +178,9 @@ html {
 	letter-spacing: 40px;
 }
 
-/* ---------------Media Queries------------- */
+/* ------------Hone Page Media Queries------------- */
 
-/* Media query for small phone*/
+/* Media query for small phone sizes */
 @media (min-width: 320px) and (max-width: 576px) {
 
 .navbar {
@@ -284,7 +285,7 @@ footer {
 }
 }
 
-/* Tablet screens media queries */
+/* Tablet, ipad screens media queries */
 @media (min-width: 768px) and (max-width: 991px) {
 
 .nav-menu li {
@@ -367,12 +368,12 @@ footer {
 
 .nav-menu li {
 	margin-left: 50px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .maincontent {
 	padding: 20px;
-	margin-top: 50vh;
+    align-items: center;
 }
 
 .maincontent img {
@@ -415,6 +416,7 @@ header {
     padding: 20px;
     font-size: 2rem;
     margin-top: 10px;
+    color: #0A202E;
 }
 
 header h1 {
@@ -428,17 +430,19 @@ header h1 {
     text-align: center;
 	margin-top: 10vh;
     font-family: Libre, sans-serif;
+    color: #0A202E;
 }
 
-/* Treatment Section Layout */
+/* Treatment & Therapy Section */
 .treatment-section {
     display: flex;
 	flex-direction: column; /* Stacked layout by default */
     margin-bottom: 40px;
-    align-items: stretch; /* To get content and image to have the same height */
+    align-items: stretch; /* To make content and image to have the same height */
     gap: 20px;
 	width: 100%;
     align-items: stretch;
+    color: #0A202E;
 }
 
 .treatment-content {
@@ -447,23 +451,26 @@ header h1 {
     flex-direction: column;
     padding: 20px;
     gap: 15px;
-    background-color: #0a202e09; 
+    background-color: #03909f13;    
     box-sizing: border-box;
     justify-content: center;
+    color: #0A202E;
 }
 
 .treatment-content h2 {
-    font-size: 1.5rem;   
+    font-size: 1.5rem;
+    color: #0A202E;   
 }
 .treatment-content p {
-    font-size: 1.2rem;   
+    font-size: 1.2rem;
+    color: #0A202E;   
 }
 
 /* Image Styling */
 .treatment-image {
     flex: 1;
 	width: 100%;
-    height: 100%; /* Matches height of text content */
+    height: 100%; /* To make sure it matches height of text content */
     object-fit: cover; /* Ensures the image covers the area without distortion */
 	background-position: center;
     background-size: cover; /* Ensures background covers the entire div */
@@ -603,7 +610,7 @@ header h1 {
 
 	.treatment-content,
     .treatment-image {
-        width: 50%; /* Split width equally */
+        width: 50%; /* To split width equally */
 		height: 100%;
     }
 	.treatment-image {
@@ -650,7 +657,7 @@ header h1 {
     }
 }
 
-/* Extra-large screens: 1200px and up */
+/* Extra-large laptop screens: 1200px and up */
 @media (min-width: 1200px) {
 	.products-wrapper {
         width: 100%; /* Full width of viewport */
@@ -666,10 +673,12 @@ header h1 {
     }
 	.treatment-content h2 {
         font-size: 2.3rem;
+        color: #0A202E;
     }
 
     .treatment-content p {
         font-size: 1.8rem;
+        color: #0A202E;
     }
 
 	.book-button {
@@ -679,15 +688,16 @@ header h1 {
 }
 
 
-
 /* ------------- Booking contact page page ---------------*/
 
+/* Image styling */
 #book-image {
     width: 100%;
-    height: 200px; 
+    max-height: 200px; 
     margin-top: 100px;
     justify-content: center;
     align-items: center; 
+    overflow: hidden;
 }
 
 .book-now-image {
@@ -697,6 +707,7 @@ header h1 {
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    object-fit: cover;
 }
 
 /* Section wrapper style */
@@ -711,34 +722,47 @@ header h1 {
 
 /* Form and map section styling */
 #form-section {
-    background-color: #0a202e09;
+    background-color: #03909f13; 
     padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
     width: 100%; 
     z-index: 15;
 	margin-bottom: 20px;
-	border: #0a202e09; 
+	border: #0a202e09;
+    color: #0A202E; 
 }
 
 #form-section h2 {
     font-family: Libre, sans-serif;
     text-align: center;
     font-size: 2rem;
+    color: #0A202E;
+    margin-top: 8px;
 }
 
-/* Map section styling */
+/* Google Map section styling */
 #find-us-section {
-    background-color: #0a202e09;
+    background-color: #03909f13;  
     padding: 20px;
     border-radius: 8px;
 	margin-bottom: 20px;
 }
 
-#find-us-section h2 {
-margin-top: 20px;
+#choose-treatment p {
+   font-size: 1.2rem;
+   margin-bottom: 8px;
 }
 
+#find-us-section h2 {
+margin-top: 26px;
+font-family: Libre, sans-serif;
+color: #0A202E;
+}
+
+.form-label {
+    margin-top: 8px;
+}
 #map iframe {
     width: 100%;
     height: 420px;
@@ -755,8 +779,10 @@ margin-top: 20px;
     border-radius: 4px;
 	box-sizing: border-box;
 	margin-bottom: 15px; 
+    font-size: 1rem; /* Default font size */
 }
 
+/* Book button styling */
 .book-button {
     background-color: #3EB9BB;
     color: white;
@@ -764,7 +790,7 @@ margin-top: 20px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-	width: 30%;
+	width: 40%;
     margin-bottom: 13px;
 }
 
@@ -779,7 +805,8 @@ margin-top: 20px;
     background-color: #0056b3;
 }
 
-/* To ensure footer sticks to the bottom if there's not enough content */
+/* To ensure footer sticks to the bottom if 
+   there's not enough content */
 footer {
     margin-top: auto; /* Pushes the footer to the bottom */
 }
@@ -788,7 +815,12 @@ footer {
 
 /* Small phone screens*/
 @media (min-width: 320px) and (max-width: 575px) {
-
+    #map iframe {
+        width: 100%;
+        height: 420px;
+        border: none;
+        margin-top: 10px;
+    }
 }
 /* Larger phone screens*/
 @media (min-width: 576px) and (max-width: 767px) {
@@ -800,8 +832,7 @@ footer {
 }
 }
 
-
-/* For larger screens, stack form and map side by side */
+/* For larger ipad, laptop screens, stack form and map side by side */
 @media (min-width: 768px) {
     .section-wrapper {
         flex-direction: row; /* Side by side on larger screens */
@@ -815,16 +846,59 @@ footer {
 
     #form-section {
         margin-right: 20px;
+        padding: 30px; /* Increase padding for larger screens */
     }
+    .form-input {
+        font-size: 1.2rem; /* Larger font size for inputs */
+        padding: 15px; /* More padding for larger screens */
+    }
+    #form-section h2 {
+        font-size: 2rem; /* Scale heading size for larger screens */
+    }
+    label {
+        font-size: 1.1rem; /* Increase label size for readability */
+    }
+
 }
-/* Laptop screens*/
+/* iPad, Laptop screens*/
 @media (min-width: 992px) {
+    #form-section h2 {
+        font-size: 2rem; /* Scale heading size for larger screens */
+    }
 
-
-
+    label {
+        font-size: 1.25rem; /* Increase label size for readability */
+    }
+    #map iframe {
+        width: 100%;
+        height: 550px;
+        border: none;
+    }
 }
 
 /* Large laptop screens media queries */
 @media (min-width: 1200px) {
+    #form-section {
+        padding: 40px; 
+    }
 
+    .form-input {
+        font-size: 1.4rem; 
+        padding: 20px; /* Add more padding for better UX */
+    }
+
+    #form-section h2 {
+        font-size: 2.5rem; 
+    }
+
+    label {
+        font-size: 1.2rem; 
+    }
+
+    #map iframe {
+        width: 100%;
+        height: 590px;
+        border: none;
+        margin-top: 50px;
+    }
 }
