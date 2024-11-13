@@ -11,96 +11,95 @@
     <meta name="keywords" content="biohacking, wellness, exercise, rehabilitation, recovery, mental health, physical health, lifestyle change, longevity, (HIIT) high-intensity interval training
             , mindfulness, anti-aging, wellness practises, immersion, accelerate energy, nutrition.">
 
-<!-- This is the title -->
+    <!-- This is the title -->
     <title>NeuroxCel Fusion Institute</title>
 
-           <!--  stylesheet  -->
-           <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-           
+    <!--  stylesheet  -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
     <!--  Favicon  -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-   
 
-<!-- Navigation menu -->
-<nav class="navbar">
-    <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="therapy&treatments.html">Therapies and Treatments</a></li>
-        <li><a href="contact-page.html" class="active">Contact Us</a></li>
-    </ul>
-</nav>
+    <!-- Navigation menu -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="therapy&treatments.html">Therapies and Treatments</a></li>
+            <li><a href="contact-page.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
 
-<!-- Book Now Image (under navbar) -->
-<div id="book-image">
-    <img src="assets/images/therapy-image.jpeg" alt="Book Now Image" class="book-now-image">
-</div>
+    <!-- Book Now Image (under navbar) -->
+    <div id="book-image">
+        <img src="assets/images/therapy-image.jpeg" alt="Book Now Image" class="book-now-image">
+    </div>
 
-<!-- Main content section -->
-<div class="section-wrapper">
-    <!-- Booking form section -->
-    <section id="form-section">
-        <form action="https://formdump.codeinstitute.net" method="POST">
-            <h2>Book a Treatement Now</h2>
-            <div>
-                <label for="fname">First Name</label>
-                <input class="form-input" id="fname" type="text" name="first_name" required>
-            </div>
-            <div>
-                <label for="lname">Last Name</label>
-                <input class="form-input" id="lname" type="text" name="last_name" required>
-            </div>
-            <div>
-                <label for="email">Email Address</label>
-                <input class="form-input" id="email" type="email" name="email_address" required>
-            </div>
-            <div id="choose-treatment">
-                <p>Choose your treatment or therapy:</p>
+    <!-- Main content section -->
+    <div class="section-wrapper">
+        <!-- Booking form section -->
+        <section id="form-section">
+            <form action="https://formdump.codeinstitute.net" method="POST">
+                <h2>Book Now</h2>
                 <div>
-                    <input id="microbiology" type="radio" name="treatment" value="microbiology" required>
-                    <label for="microbiology">Microbiology</label>
+                    <label for="fname">First Name</label>
+                    <input class="form-input" id="fname" type="text" name="first_name" required>
                 </div>
                 <div>
-                    <input id="Biohacking" type="radio" name="treatment" value="fBiohacking">
-                    <label for="Biohacking">Biohacking</label>
+                    <label for="lname">Last Name</label>
+                    <input class="form-input" id="lname" type="text" name="last_name" required>
                 </div>
                 <div>
-                    <input id="nutrigenomics" type="radio" name="treatment" value="nutrigenomics">
-                    <label for="nutrigenomics">Nutrigenomics</label>
+                    <label for="email">Email Address</label>
+                    <input class="form-input" id="email" type="email" name="email_address" required>
+                </div>
+                <div id="choose-treatment">
+                    <p>Choose your treatment or therapy:</p>
+                    <div>
+                        <input id="microbiology" type="radio" name="treatment" value="microbiology" required>
+                        <label for="microbiology">Microbiology</label>
+                    </div>
+                    <div>
+                        <input id="Biohacking" type="radio" name="treatment" value="fBiohacking">
+                        <label for="Biohacking">Biohacking</label>
+                    </div>
+                    <div>
+                        <input id="nutrigenomics" type="radio" name="treatment" value="nutrigenomics">
+                        <label for="nutrigenomics">Nutrigenomics</label>
+                    </div>
+                    <div>
+                        <input id="immersion" type="radio" name="treatment" value="immersion">
+                        <label for="immersion">Immersion</label>
+                    </div>
+                    <div>
+                        <input id="nootropics" type="radio" name="treatment" value="nootropics">
+                        <label for="nootropics">Nootropics</label>
+                    </div>
+                    <div>
+                        <input id="auto-immune-disease-relief" type="radio" name="treatment" value="auto-immune-disease-relief">
+                        <label for="auto-immune-disease-relief">Autoimmune disease relief</label>
+                    </div>
                 </div>
                 <div>
-                    <input id="immersion" type="radio" name="treatment" value="immersion">
-                    <label for="immersion">Immersion</label>
+                    <label class="form-label" for="date">Date</label>
+                    <input class="form-input" id="date" type="date" name="booking-date" required>
                 </div>
-                <div>
-                    <input id="nootropics" type="radio" name="treatment" value="nootropics">
-                    <label for="nootropics">Nootropics</label>
-                </div>
-                <div>
-                    <input id="auto-immune-disease-relief" type="radio" name="treatment" value="auto-immune-disease-relief">
-                    <label for="auto-immune-disease-relief">Autoimmune disease relief</label>
-                </div> 
-            </div>
-            <div>
-                <label class="form-label" for="date">Date</label>
-                <input class="form-input" id="date" type="date" name="booking-date" required>
-            </div>
-            <input class="book-button" type="submit" value="Book Now">
-        </form>
-    </section>
+                <input class="book-button" type="submit" value="Book Now">
+            </form>
+        </section>
 
-    <!-- Find us section -->
-    <section id="find-us-section">
-        <h2>Find Us</h2>
-        <div id="map">
-            <iframe src="https://bit.ly/3Am9tY2" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-</div>
+        <!-- Find us section -->
+        <section id="find-us-section">
+            <h2>Find Us</h2>
+            <div id="map">
+                <iframe src="https://bit.ly/3Am9tY2" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
 
-      <!-- Footer social media icons with white color bar -->
-      <footer class="footer">
+    <!-- Footer social media icons with white color bar -->
+    <footer class="footer">
         <ul id="social-networks">
             <li>
                 <a href="https://www.Facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
@@ -128,12 +127,9 @@
             </li>
         </ul>
     </footer>
-</body>
+    </body>
+
 </html>
-    <!-- Font Awesome kit -->
-    <script src="https://kit.fontawesome.com/bc1684c35f.js" crossorigin="anonymous"></script>
 
-
-
-                
-  
+<!-- Font Awesome kit -->
+<script src="https://kit.fontawesome.com/bc1684c35f.js" crossorigin="anonymous"></script>
