@@ -1,46 +1,37 @@
 Welcome Users,
 
 NEUROXCEL FUSION INSITITUTE
-Biohacking supported by cutting-edge technologies to accelerate your health and wellness
 
-OVERVIEW
-The site provides the users a clear outline of the institute, their vison, which is to help, support, heal and accelerate everyone’s mental and physical wellbeing.
+Neuroxcel Insititute a fictional institute located in Belgium. It offers a variety of treatments and therapies, to support and help everyone improve, enhance or recover from illness, herditory conditions or surgery. 
+The purpose of this website is to promote phyiscal and mental wellness and to provide information to the customers about the institue, its treatments, therapies and contact options. The website targets an audience of new customers looking for the treatments being offered as well as returning customers looking to schedule a new appointments or find out about their new offerings.
 
-Users of this website will be able to gain an understanding of biohacking, the different types of biohacking and the different practises, therapies, nutrition, technology and a mix of professionals used for the specific areas of focus. This site's purpose is to promote biohacking and bring value to different user groups like rehabilitation & recovery, neural conditions, neurological conditions, wellness, mental health, longevity, performance acceleration and enhanced nutrition. The benefits for these users (depending on their specific focus areas) is that they will get access to a combination of therapies, products, supplement, experts and technology to accelerate recovery, increase performance, introduce wellness, promote longevity or simply to learn how they can make changes to benefit their overall mental and physical health and change in their environments.
+Visit the deployed website here ().
+
+
+The website displays a few therapies and treatments offered by the institute promotes several treatements to supoprt and accelerate recovery, increase performance, introduce wellness, and promote longevity or to benefit a persons overall mental and physical health.
 
 CONTENTS:
-USER EXPERIENCE (ux)
-
-Project goals
-Epics & user stories
-Colours
-4.Typography (fonts)
-Wireframes
-FEATURES & FUNCTIONALITY
-
-Home page
-Products & Services page
-Contact us page
-FRAMEWORKS, LIBRARIES AND PROGRAM USED
-
-Languages
-Programs
-TESTING
-
-User stories
-Forms
-Code validation
-Accessibility & scores</>
-DEPLOYMENT
-RESOURCES
-RESEARCH
+* USER EXPERIENCE (ux)
+* Project goals
+* Colours
+*  Fonts
+*  Wireframes
+*  FEATURES & FUNCTIONALITY
+*  FRAMEWORKS, LIBRARIES AND PROGRAMS
+*  TESTING
+*  User stories
+*  Code validation
+*  Accessibility & scores</>
+*  DEPLOYMENT
+*  RESOURCES
+*  Credits
 
 FEATURES & FUNCTIONALITY
 Home Page
 
 This page gives the users the ability to click on 'discover' button to learn more about the institute, contact them, and access the other pages through the top navigation menu.
 Topnavigation bar: is featured on all three website pages, that is fully responsive which includes links to the logo, home page, about us page, products & services page and the contact us page.
-image
+
 
 Products & Services page
 
@@ -61,9 +52,6 @@ e. Well-defined purpose addressing a particular target/multiple audience.
 f. Its purpose would be immediately evident to a new user.
 g. The website’s design follows the principles of UX design and accessibility guidelines, and the site is fully responsive.
 
-image
-
-Epics & user stories
 
 As a user I want the ability to click on all the social media icons and be redirected to the relevant social media sites.
 As a user I want the ability to move through the navigation of the site by clicking on the menu bar and be directed to the page of choice.
@@ -73,26 +61,27 @@ As a user I want the ability to get exact information on the products/services o
 As a user I want the ability to fill out the contact form so that I can get in contact with the company.
 As a user I want the ability to enter my personalised message in the 'freetext' field, so I can give personalised message to the company.
 Colours
-image
 
-Typography
+
+
 Headings and sub-headings: Font used - Libre
 Body copy: Font used - Lato sans serif
 
 Wireframes
-image
 
-image
+
+
 
 Frameworks, Libraries and Programs Used
-a. Languages: HTML, CSS
+Languages: HTML, CSS
+
 HTML5
 https://en.wikipedia.org/wiki/HTML5
 
 CSS
 https://en.wikipedia.org/wiki/CSS
 
-b. Programs:
+Technology
 VS desktop
 https://code.visualstudio.com/download
 
@@ -142,19 +131,15 @@ As a user I want the ability to click on the 'call-to-action' discover button so
 As a user I want the ability to get exact information on the products/services offered by the company.
 As a user I want the ability to fill out the contact form so that I can get in contact with the company directed.
 As a user I want the ability to enter my personalised message in the 'free-text' field, so I can give personalised message to the company.
-Form validation
-Contact us form
-image image
 
-Newsletter subscription form
-image image
+Form validation
+
+
 
 Code valildation
 The W3C Html Markup Validator and W3C CSS Validator services were used to validate all pages of the project in order to ensure there were no syntax errors.
 https://validator.w3.org/detailed.html Some warnings found for the // in the CSS stylesheet. HTML Home page:
-image HTML Products: Page
-image Contact Page:
-image
+
 
 https://jigsaw.w3.org/css-validator/ Validating my CSS I got this error and corrected it. image image
 
@@ -162,23 +147,20 @@ Accessibility & scores
 Used Lighthouse in Chrome DevTools to confirm accessibility used in throughout the website are easy to read and accessible.
 
 Home page
-image
 
-Products & services Page
-image
+
+Treatmetns & Therapies Page
+
 
 Contact us page
-image
+
 
 DEPLOYMENT
 Github pages & Libraries
 
-RESOURCES
-
-Best practises
+Credits
 https://stackoverflow.com/
-b2. Code for Google maps integration
-I used this code reference: https://www.w3schools.com/graphics/google_maps_intro.asp
+
 
 Image libraries
 Unsplash
@@ -187,48 +169,5 @@ Freepix
 Icon libraries
 Favicon
 
-Research
-The research I did for project is contained the link and includes the list items below.
-https://my.visme.co/editor/MW9DSW1zTUdUS2kvTFBLanhkTFFpQT09Ojo2TzNKUWlCUHdxLzlHcGhlNE1tNTVnPT0=/basics
 
-Users
-Consumer- no referral (only access to resources, practises, self-help pages)
-Patients (by referral only)
-Industry professionals (e.g. Occupational therapist, GP)
-Partners
-Administrators
-Data security
-Clinic lead
-Nutritionist
-Analysts
-Researchers
-Community health care worker/health extension worker
-Social worker
-User segmentation groups
-Rehabilitation & recovery
-Neural conditions (stroke) patients
-Mental health
-Nutrigenomics
-General Wellness
-Lifestyle change
-Metabolic improvement
-Longevity
-(HIIT) high-intensity interval training
-Anti-aging
-Mindfulness
-Immersion healing
-Strategy
-image
 
-USPs
-Our biohacking programs reduced stress & anxiety by 96%
-Our biohacking programs accelerated recovery from major surgery by 68%
-82% reported an improvement in their mental & physical health
-
-Competitors
-
-Bulletproof360
-Moodmetric
-Sqlab
-Dobiohacking
-The Odin
