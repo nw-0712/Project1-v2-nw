@@ -50,7 +50,7 @@ html {
 	color: #f0f0f0;
 	font-size: 1rem;
 	text-decoration: none;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	align-items: center;
 }
 
@@ -217,7 +217,7 @@ html {
 
 	.maincontent h1 {
 		font-size: 1.1rem;
-		line-height: 1.1;
+		line-height: 2px;
 		/* Adjusted line height for better readability */
 	}
 
