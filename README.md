@@ -11,7 +11,7 @@ Visit the deployed website here (https://nw-0712.github.io/Project1-v2-nw/).
 The website displays a few therapies and treatments offered by the institute promotes several treatements to supoprt and accelerate recovery, increase performance, introduce wellness, and promote longevity or to benefit a persons overall mental and physical health.
 
 ## Table of Contents
- [User Experience (UX)](#user-experience-ux)
+1. [User Experience (UX)](#user-experience-ux)
     1. [Project Goals](#project-goals)
     2. [User Stories](#user-stories)
     3. [Color Scheme](#color-scheme)
@@ -25,16 +25,16 @@ The website displays a few therapies and treatments offered by the institute pro
  3. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
-4. [Testing](#testing)
+ 4. [Testing](#testing)
     1. [Testing User Stories](#testing-user-stories)
     2. [Code Validation](#code-validation)
     3. [Accessibility](#accessibility)
     4. [Tools Testing](#tools-testing)
     5. [Manual Testing](#manual-testing)
-5. [Finished Product](#finished-product)
-6. [Deployment](#deployment)
+ 5. [Finished Product](#finished-product)
+ 6. [Deployment](#deployment)
     1. [GitHub Pages](#github-pages)
-7. [Credits](#credits)
+ 7. [Credits](#credits)
     1. [Content](#content)
     2. [Code](#code)
 
@@ -69,7 +69,6 @@ Body copy: Font used - Lato sans serif
 
 ### Wireframes
 
-readability
 ![image](https://github.com/user-attachments/assets/e65fa744-3348-4837-ba6b-bcbdaeb2aaab)
 
 ![image](https://github.com/user-attachments/assets/43627d78-ad0b-476e-a0bf-a9977822e22e)
@@ -104,7 +103,7 @@ The navigation bar is identical in all pages and contains links to all pages to 
 * This section displays a Google map of the institues geographical location. This allows the customers to easily find the location from their various devices.
 
 
-### Technology
+### Technology used
 Languages: HTML, CSS
 
 ### Frameworks, Libraries and Programs
