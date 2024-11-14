@@ -169,27 +169,29 @@ User stories</br>
 * As a customer, I want to easily find the institutes location.
 * The book now page contains a find us section with a Google map of the institutes geographical location.
 
-* Form validation
+* Form validation</br>
 ![image](https://github.com/user-attachments/assets/0c00a044-0951-4b52-abdc-f03b547234a1)
 
 
-### Code Validation
+### Code Validation</br>
 The W3C Html Markup Validator and W3C CSS Validator services were used to validate all pages of the project in order to ensure there were no syntax errors.</br>
+
 * Home page</br>
-* Found an error on the html and corrected it around spacing.
+* Found an error on the html and corrected it around spacing.</br>
 ![image](https://github.com/user-attachments/assets/0063247c-58d9-4b0e-b0af-426bc9ec6fa0)
 
-
 *  Treatment page</br>
-*  No errors found
-*  Contact page</br>
+*  No errors found</br>
+![image](https://github.com/user-attachments/assets/5335a571-b4af-4af1-aa3c-21a2c570179f)
 
- 
-*   No errors found
+*  Contact page</br>
+*   No errors found</br>
+![image](https://github.com/user-attachments/assets/cb664de9-4c05-46d6-8346-bac2ad490da1)
 
 *   Accessibility on all pages and scores</br>
+
 ![image](https://github.com/user-attachments/assets/d30b7deb-a244-4b3a-ab54-6305de2dab09)
-* Used Lighthouse in Chrome DevTools to confirm accessibility used in throughout the website pages.
+* Used Lighthouse in Chrome DevTools to confirm accessibility used in throughout the website pages.</br>
 
 
 ### Tools Testing
