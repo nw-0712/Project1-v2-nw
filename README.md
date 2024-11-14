@@ -175,26 +175,26 @@ User stories</br>
 
 ### Code Validation
 The W3C Html Markup Validator and W3C CSS Validator services were used to validate all pages of the project in order to ensure there were no syntax errors.
-* Home page
+* Home page</br>
 [image](https://github.com/user-attachments/assets/0dcccc03-bb6d-4903-80b5-011fe035dcea)
 * Found an error on the html and corrected it around spacing.
-*  Treatment page
+*  Treatment page</br>
 [image](https://github.com/user-attachments/assets/6aca0db7-6744-4dba-b8af-106be3d66109)
 *  No errors found
-*  Contact page
+*  Contact page</br>
  [image](https://github.com/user-attachments/assets/05435b45-c731-4d46-8da4-78b496e05c32)
 *   No errors found
 
-*   Accessibility on all pages and scores
+*   Accessibility on all pages and scores</br>
 ![image](https://github.com/user-attachments/assets/d30b7deb-a244-4b3a-ab54-6305de2dab09)
 * Used Lighthouse in Chrome DevTools to confirm accessibility used in throughout the website pages.
 
 
 ### Tools Testing
-* Chrome DevTools
+* Chrome DevTools</br>
 * Chrome DevTools was used during the development process to test, adjust and modify HTML elements and CSS styles used.
 
-* Responsiveness
+* Responsiveness</br>
 * Am I Responsive? was used to check responsiveness of the site pages across different devices.
 * Chrome DevTools was used to test responsiveness in different screen sizes.
 
@@ -212,16 +212,16 @@ The W3C Html Markup Validator and W3C CSS Validator services were used to valida
 ![image](https://github.com/user-attachments/assets/ac6bcbf4-909d-4589-95d7-349b305c0678)
 
 ### Deployement
-Github pages & Libraries
+Github pages & Libraries</br>
 https://github.com/nw-0712/Project1-v2-nw/tree/main
 
 ### Credits
-* Code
+* Code</br>
 https://stackoverflow.com/
 * Stack Overflow and W3Schools were consulted on a regular basis for guidance and etter understand why my code and mdeia queries weer not behaving like I wanted it.
 
-* Content
-* Used site for research on treatment and therapies
+* Content### 
+* Used site for research on treatment and therapies### 
 https://www.mindhacki.ng/
 https://www.thinkherrmann.com/whole-brain-thinking-blog/mind-hacks-grow-beyond-what-you-know
 https://recellebrate.com/biohacking-services/
