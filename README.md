@@ -68,7 +68,8 @@ Headings and sub-headings: Font used - Libre
 Body copy: Font used - Lato sans serif
 
 ### Wireframes
-![image](https://github.com/user-attachments/assets/e65fa744-3348-4837-ba6b-bcbdaeb2aaab)
+![image](https://github.com/user-attachments/assets/132d9d17-e32a-4252-9204-aa02dd960d24)
+
 
 ![image](https://github.com/user-attachments/assets/43627d78-ad0b-476e-a0bf-a9977822e22e)
 
