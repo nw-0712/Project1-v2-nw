@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/11b57b5d-8b2c-433a-b8b9-9456e6c92bd3)
+
 Welcome Users,
 
 NEUROXCEL FUSION INSITITUTE
@@ -188,10 +190,10 @@ The W3C Html Markup Validator and W3C CSS Validator services were used to valida
 *   No errors found</br>
 ![image](https://github.com/user-attachments/assets/cb664de9-4c05-46d6-8346-bac2ad490da1)
 
-*   Accessibility on all pages and scores</br>
 
-![image](https://github.com/user-attachments/assets/d30b7deb-a244-4b3a-ab54-6305de2dab09)
+*   Accessibility on all pages and scores</br>
 * Used Lighthouse in Chrome DevTools to confirm accessibility used in throughout the website pages.</br>
+![image](https://github.com/user-attachments/assets/d30b7deb-a244-4b3a-ab54-6305de2dab09)
 
 
 ### Tools Testing
@@ -215,7 +217,7 @@ The W3C Html Markup Validator and W3C CSS Validator services were used to valida
 
 ![image](https://github.com/user-attachments/assets/ac6bcbf4-909d-4589-95d7-349b305c0678)
 
-### Deployement
+### Deployment
 Github pages & Libraries</br>
 https://github.com/nw-0712/Project1-v2-nw/tree/main
 
@@ -224,8 +226,8 @@ https://github.com/nw-0712/Project1-v2-nw/tree/main
 https://stackoverflow.com/
 * Stack Overflow and W3Schools were consulted on a regular basis for guidance and etter understand why my code and mdeia queries weer not behaving like I wanted it.
 
-* Content### 
-* Used site for research on treatment and therapies### 
+* Content</br>
+* Used site for research on treatment and therapies</br>
 https://www.mindhacki.ng/
 https://www.thinkherrmann.com/whole-brain-thinking-blog/mind-hacks-grow-beyond-what-you-know
 https://recellebrate.com/biohacking-services/
