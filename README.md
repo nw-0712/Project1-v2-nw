@@ -48,13 +48,13 @@ The website displays a few therapies and treatments offered by the institute pro
 * This website aims to increase bookings through providing book now call-to-action butotns with each treament, porgram or therapy section.
 
 ### User Stories
-As a user I want the ability to move through the navigation of the site by clicking on the navigation list menu bar and be directed to the page of choice.
-As a user I want the ability to click on the 'call-to-action' discover button and be directed to the next screen of treatments and therapies page to learn more about the offers.
-As a user I want the ability to get information on the treatments and therapies offered by the institution.
-As a user I want the ability to click on the "book now" button on the relevant treatment, program or therapy section to book a treatment.
-As a user I want the ability to enter my personal details and and choose a treatment that I am interested in and book a treatement of my choice on a suitable date and time.
-As a user I want the ability to click on Google maps and be directed to the app, so that I can get directions form my location to company.
-As a user I want the ability to click on all the social media icons and be redirected to the relevant social media site.
+* As a user I want the ability to move through the navigation of the site by clicking on the navigation list menu bar and be directed to the page of choice.
+* As a user I want the ability to click on the 'call-to-action' discover button and be directed to the next screen of treatments and therapies page to learn more about the offers.
+* As a user I want the ability to get information on the treatments and therapies offered by the institution.
+* As a user I want the ability to click on the "book now" button on the relevant treatment, program or therapy section to book a treatment.
+* As a user I want the ability to enter my personal details and and choose a treatment that I am interested in and book a treatement of my choice on a suitable date and time.
+* As a user I want the ability to click on Google maps and be directed to the app, so that I can get directions form my location to company.
+* As a user I want the ability to click on all the social media icons and be redirected to the relevant social media site.
 
 
 ### Colour Scheme
