@@ -4,7 +4,7 @@ Welcome Users,
 
 NEUROXCEL FUSION INSITITUTE
 
-Neuroxcel Insititute a fictional institute located in Belgium. It offers a variety of treatments and therapies, to support and help everyone improve, enhance or recover from illness, herditory conditions or surgery. 
+Neuroxcel Insititute a fictional institute located in Belgium. It offers a variety of treatments and therapies, to support and help everyone improve, enhance or recover from illness, hereditary conditions or surgery. 
 The purpose of this website is to promote phyiscal and mental wellness and to provide information to the customers about the institue, its treatments, therapies and contact options. The website targets an audience of new customers looking for the treatments being offered as well as returning customers looking to schedule a new appointments or find out about their new offerings.
 
 Visit the deployed website here (https://nw-0712.github.io/Project1-v2-nw/).
