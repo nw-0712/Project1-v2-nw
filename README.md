@@ -104,60 +104,57 @@ The navigation bar is identical in all pages and contains links to all pages to 
 
 
 ### Technology used
-Languages: HTML, CSS
+Languages: HTML, CSS</br>
 
 ### Frameworks, Libraries and Programs
-HTML5
+HTML5</br>
 https://en.wikipedia.org/wiki/HTML5
 
-CSS
+CSS</br>
 https://en.wikipedia.org/wiki/CSS
 
-Technology
-VS desktop
+Technology</br>
+VS desktop</br>
 https://code.visualstudio.com/download
 
-Github
+Github</br>
 https://github.com/
 
-Gitpod
+Gitpod</br>
 https://www.gitpod.io/
 
-Visme
+Visme</br>
 https://www.visme.co/
 
-W3C markup validator
+W3C markup validator</br>
 https://validator.w3.org/
 
-CodeBeautify
+CodeBeautify</br>
 https://codebeautify.org/css-beautify-minify
 
-Unsplash
-https://unsplash.com/
-
-Favicon
+Favicon</br>
 https://favicon.io/
 
-Unsplash images
+Unsplash images</br>
 https://unsplash.com/
 
-Font Awesome
+Font Awesome</br>
 https://fontawesome.com/
 
-Freepix
+Freepix</br>
 https://www.freepik.com/
 
-Chromedevtools
+Chromedevtools</br>
 https://developer.chrome.com/docs/devtools
 
-Am I responsive
+Am I responsive</br>
 https://ui.dev/amiresponsive
 
-Google fonts
+Google fonts</br>
 https://fonts.google.com/
 
 ### Testing
-User stories
+User stories</br>
 
 * As a customer, I want to be able to navigate the website intuitively and learn more about the what the institute offers and treatments, programs, therapies being offered.
 * The website offers a intuitive structure for the customers to navigate through and find the information they arewanting to find out about.
