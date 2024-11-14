@@ -173,18 +173,19 @@ User stories
 * The book now page contains a find us section with a Google map of the institutes geographical location.
 
 * Form validation
-* ![image](https://github.com/user-attachments/assets/16c338c9-d813-4548-9a70-bfe9b7d54397)
+![image](https://github.com/user-attachments/assets/0c00a044-0951-4b52-abdc-f03b547234a1)
+
 
 ### Code Validation
 The W3C Html Markup Validator and W3C CSS Validator services were used to validate all pages of the project in order to ensure there were no syntax errors.
 * Home page
-* ![image](https://github.com/user-attachments/assets/0dcccc03-bb6d-4903-80b5-011fe035dcea)
+[image](https://github.com/user-attachments/assets/0dcccc03-bb6d-4903-80b5-011fe035dcea)
 * Found an error on the html and corrected it around spacing.
 *  Treatment page
-*  ![image](https://github.com/user-attachments/assets/6aca0db7-6744-4dba-b8af-106be3d66109)
+[image](https://github.com/user-attachments/assets/6aca0db7-6744-4dba-b8af-106be3d66109)
 *  No errors found
 *  Contact page
-*  ![image](https://github.com/user-attachments/assets/05435b45-c731-4d46-8da4-78b496e05c32)
+ [image](https://github.com/user-attachments/assets/05435b45-c731-4d46-8da4-78b496e05c32)
 *   No errors found
 
 *   Accessibility on all pages and scores
