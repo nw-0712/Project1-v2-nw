@@ -43,11 +43,11 @@ The website displays atherapies, programs and treatments offered by the institut
 
 ## User Experience (UX)
 ### Project Goals
-* The website should create a inspirational and tries to get customers interested in knowing more about how to get physhical and mental optimal health.
+* The website should create a inspirational feeling and tries to get customers interested in knowing more about how to get physhical and mental optimal health.
 * It presents some treatments and therapies offered and information about them in order to attract customers to book one.
 * Provides the customer with some information on the various treatments or therapies, depending on what their improvement focus area is.
 * Offers the customers the opportunity to book a treatment or therapy once they have decided which one is most relevant to them.
-* This website aims to increase bookings through providing book now call-to-action butotns with each treament, porgram or therapy section.
+* This website aims to increase bookings through providing book now call-to-action buttons with each treament, porgram or therapy section.
 
 ### User Stories
 * As a user I want the ability to move through the navigation of the site by clicking on the navigation list menu bar and be directed to the page of choice.
