@@ -37,21 +37,23 @@ html {
 	display: flex;
 	flex-direction: row;
 	/* Set items in a horizontal row */
+	padding: 0;           
+    margin: 0;  
 }
 
 .nav-menu li {
 	margin-left: 20px;
 	align-items: center;
-	font-size: 1.2rem;
 	margin-top: 8px;
 }
 
 .nav-menu li a {
 	color: #f0f0f0;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	text-decoration: none;
 	letter-spacing: 1px;
 	align-items: center;
+	line-height: 1;
 }
 
 .nav-menu li a:hover {
@@ -185,10 +187,13 @@ html {
 /* Media query for small phone*/
 @media (min-width: 320px) and (max-width: 576px) {
 
-	.navbar {
-		padding: 20px 20px;
-		/* Increased padding for better visibility */
-	}
+	.nav-menu li {
+        margin-top: 2px; /* Reduce the top margin on very small screens */
+    }
+
+    .nav-menu li a {
+        font-size: 0.9rem; /* Further reduce font size for very small screens */
+    }
 
 	.cover-container {
 		background-size: contain;
@@ -216,14 +221,15 @@ html {
 	}
 
 	.maincontent h1 {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		line-height: 2px;
 		/* Adjusted line height for better readability */
 	}
 
 	.maincontent h2 {
-		font-size: 0.5rem;
-		letter-spacing: 2px;
+		font-size: 0.7rem;
+		letter-spacing: 2.2px;
+		margin-top: 10px;
 	}
 
 	.cta-button {
