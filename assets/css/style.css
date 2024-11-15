@@ -827,6 +827,10 @@ header h1 {
 	font-size: 2rem;
 }
 
+#find-us-section p {
+	font-size: 1rem;
+}
+
 #map iframe {
 	width: 100%;
 	height: 420px;
@@ -901,6 +905,10 @@ footer {
 	#choose-treatment p {
 		font-size: 1rem;
 		/* Default font size */
+	}
+
+	#find-us-section p {
+		font-size: 1.3rem;
 	}
 }
 
@@ -984,6 +992,10 @@ footer {
 	#choose-treatment p {
 		font-size: 1.4rem;
 	}
+
+	#find-us-section p {
+		font-size: 1.45rem;
+	}
 }
 
 /* Large laptop screens media queries */
@@ -1007,5 +1019,8 @@ footer {
 
 	#map iframe {
 		height: 570px;
+	}
+	#find-us-section p {
+		font-size: 1.4rem;
 	}
 }
