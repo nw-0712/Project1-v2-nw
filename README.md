@@ -82,25 +82,25 @@ Body copy: Font used - Lato sans serif
 * The users can fill out the contact form, to contact the company and has dropdown function to select country of choice.
 * The users can also click on map and be directed to the Google maps application to get directions to the various offices.
 
-* Header
-  ![image](https://github.com/user-attachments/assets/c3248159-d091-4c19-a47d-057fa22feed3)
+* Header</br>
+![image](https://github.com/user-attachments/assets/c3248159-d091-4c19-a47d-057fa22feed3)
 * The navigation bar is identical in all pages and contains links to all pages to facilitate navigation across the site. 
 
-* Landing (home) page
+* Landing (home) page</br>
   ![image](https://github.com/user-attachments/assets/39c490c7-3f37-476e-a5fa-a3e96a584aa4)
 * The main image is designed to attract the customer's attention and be inspirational, but also to try and motivate cusotmers to take action no matter what their state of mental and pyshical is.
 
-* Treatment page
+* Treatment page</br>
   ![image](https://github.com/user-attachments/assets/9e692338-4b2d-4acf-a467-d4d831f691c4)
 * This page contains the information on different treatment, programs or therapies offered.
 * The treatment section contains an image to represent a high level topic, but also to be there for inspiration for the respective treatment and a short text with an explanation of the treatment or therapy.
 * A link to the book now page has been added to each section for easy navigation.
 
-* Contact page
+* Contact page</br>
   ![image](https://github.com/user-attachments/assets/7e6ec951-baae-40c1-9f35-36ec7945d3b8)
 * This form is there to support customers to fill in details and treatment they want.
  
-* Find us section
+* Find us section</br>
   ![image](https://github.com/user-attachments/assets/f4970138-4f9f-4ba7-9612-e7b6bf135a2b)
 * This section displays a Google map of the institues geographical location. This allows the customers to easily find the location from their various devices.
 
